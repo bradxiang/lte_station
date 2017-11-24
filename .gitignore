@@ -1,0 +1,17 @@
+## .gitignore
+
+# web application file
+Station/ipch
+Station/Station/DATA
+Station/Station/Debug
+Station/Station/Release
+Station/Debug
+Station/Release
+demo/ipch
+demo/x64
+demo/Station/x64
+demo/Station/DATA
+
+# IDE support file
+Station/Station.sdf
+demo/Station.sdf

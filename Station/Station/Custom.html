@@ -1,0 +1,139 @@
+<HTML>
+	<HEAD>
+		<TITLE>自定义浏览器</TITLE>
+		<script langauge="javascript">
+	function fnIsOurCustomBrowser()
+	{
+		// 检验是否是自定义浏览器我们只用调用函数
+		// CB_IsOurCustomBrowser看是否可以获得.
+		// 不带()表示属性调用,可以检验函数是否在外部窗口
+		// 返回null表示不是自定义窗口,返回false
+		if(window.external.CB_IsOurCustomBrowser != null)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
+	// 用一个变量检验是否是自定义浏览器.
+	bIsCustomBrowser = fnIsOurCustomBrowser();
+
+	if(!bIsCustomBrowser)
+	{
+		// 检查到不是自定义浏览器,你可以做一些处理例如转到其他页面
+		// 这里只是警告
+		alert('为了显示正常,你必须使用自定义浏览器.');
+	}
+
+	function fnCallFunction()
+	{
+		// 在自定义浏览器里面调用C++函数
+		if(bIsCustomBrowser)
+		{
+			window.external.CB_CustomFunction();
+		}
+	}
+
+	function fnSetText(strVal)
+	{
+		// 在自定义浏览器里面调用C++函数
+		if(bIsCustomBrowser)
+		{
+			result.innerText = strVal;
+		}
+	}
+
+	function fnClose()
+	{
+		// 关闭主窗口
+		if(bIsCustomBrowser)
+		{
+			window.external.CB_Close();
+		}
+	}
+
+	function fnCallFunctionWithParams(strString, nNumber)
+	{
+		// 在自定义浏览器里面调用带有参数的C++函数
+		if(bIsCustomBrowser)
+		{
+			window.external.CB_CustomFunctionWithParams(strString, nNumber);
+		}
+	}
+
+	function fnCallAdd(add1, add2)
+	{
+		if(bIsCustomBrowser)
+		{
+			window.external.CB_CustomFunctionAdd(add1, add2);
+		}
+	}
+
+	function fnShowModalDialog(strCaption, nLeft, nTop, nWidth, nHeight)
+	{
+		if(bIsCustomBrowser)
+		{
+			window.external.CB_ShowModalDialog(strCaption, nLeft, nTop, nWidth, nHeight);
+		}
+	}
+
+	function fnShowModelessDialog(strCaption, nLeft, nTop, nWidth, nHeight)
+	{
+		if(bIsCustomBrowser)
+		{
+			window.external.CB_ShowModelessDialog(strCaption, nLeft, nTop, nWidth, nHeight);
+		}
+	}
+		</script>
+	</HEAD>
+	<BODY style="FONT-SIZE:10pt;FONT-FAMILY:arial" bgcolor="#ccff66">
+		<h2><b><u>自定义浏览器测试页面</u></b></h2>
+		<p>通过javascript调用C++函数:</p>
+		<input type="button" value="点击测试" onclick="fnCallFunction();">
+		<BR>
+		<BR>
+		<BR>
+		<p>调用带有参数的C++函数:
+			<BR>
+			参数1: <input type="text" name="param1" value="test" style="WIDTH:60px">
+			<BR>
+			参数2: <input type="text" name="param2" value="193" style="WIDTH:60px">
+		</p>
+		<input type="button" value="点击测试" onclick="fnCallFunctionWithParams(document.all.param1.value, parseInt(document.all.param2.value));">
+		<BR>
+		<BR>
+		<BR>
+		<p>网页传递参数调用C++函数然后调用脚本:
+			<BR>
+			被加数1: <input type="text" name="add1" style="WIDTH:60px">
+			<BR>
+			加&nbsp;&nbsp;&nbsp;数2: <input type="text" name="add2" style="WIDTH:60px">
+			<BR>
+			结&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;果: <input type="text" id="result" style="WIDTH:60px">
+		</p>
+		<input type="button" value="点击测试" onclick="fnCallAdd(parseInt(document.all.add1.value), parseInt(document.all.add2.value));">
+		<BR>
+		<BR>
+		<BR>
+		<p>调用函数打开模态对话框:</p>
+		<input type="button" value="点击测试" onclick="fnShowModalDialog('www.cppblog.com/wlwlxj', 100, 100, 500, 500);">
+		<BR>
+		<BR>
+		<BR>
+		<p>调用函数打开非模态对话框:</p>
+		<input type="button" value="点击测试" onclick="fnShowModelessDialog('www.cppblog.com/wlwlxj', 0, 0, 500, 500);">
+		<BR>
+		<BR>
+		<BR>
+		<p>显示自定义警告框:</p>
+		<input type="button" value="点击测试" onclick="alert('测试自定义消息框.注意调用alert时修改了警告框的标题.原则上我们可以实现任何想要的警告框.');">
+		<BR>
+		<BR>
+		<BR>
+		<p>关闭主窗体:</p>
+		<input type="button" value="点击测试" onclick="fnClose();">
+	</BODY>
+</HTML>

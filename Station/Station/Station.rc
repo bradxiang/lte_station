@@ -1,0 +1,2867 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\RTSPAA.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""          // 标准组件\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.CHS\\afxprint.rc""                // 打印/打印预览资源\r\n"
+    "#include ""l.CHS\\afxribbon.rc""               // MFC 功能区和控件条资源\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Station.ico"
+IDR_RTSPAATYPE          ICON                    "res\\StationDoc.ico"
+IDI_HUAWEI              ICON                    "res\\HUAWEI.ico"
+IDR_ZTE                 ICON                    "res\\zte.ico"
+IDI_GT                  ICON                    "res\\Server_GT.ico"
+IDI_IN                  ICON                    "res\\In.ico"
+IDI_OUT                 ICON                    "res\\Out.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+IDR_TOOLBAR1            BITMAP                  "res\\toolbar1.bmp"
+IDB_TOOLBAR             BITMAP                  "res\\Toolbar_32.bmp"
+IDB_BACKGROUND          BITMAP                  "res\\Background.bmp"
+IDB_ABOUT               BITMAP                  "res\\About.bmp"
+IDB_TREE                BITMAP                  "res\\tree.bmp"
+IDB_TREE_COPY           BITMAP                  "res\\Tree_Copy.bmp"
+IDB_TREE_CHECK          BITMAP                  "res\\Check.bmp"
+IDB_TREE_STATION        BITMAP                  "res\\Tree_Station.bmp"
+IDB_ERISSON             BITMAP                  "res\\ERISSON.bmp"
+IDB_TREE_CHECK_1        BITMAP                  "res\\Check_1.bmp"
+IDB_HOME                BITMAP                  "res\\Home.bmp"
+IDB_PM_Check            BITMAP                  "res\\PM_Chech.bmp"
+IDB_PM_UnCheck          BITMAP                  "res\\PM_UnChech.bmp"
+IDB_TREE_STATION_PG     BITMAP                  "res\\Tree_Station_PG.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_TOOLBAR1 TOOLBAR  32, 32
+BEGIN
+    BUTTON      ID_LTE_PM_DRAW
+    BUTTON      ID_LTE_PM_DATA
+    SEPARATOR
+    BUTTON      ID_LTE_PM_DATA_CELL
+    BUTTON      ID_LTE_PM_DATA_REAL
+    SEPARATOR
+    BUTTON      ID_ALARM_PM
+    SEPARATOR
+    BUTTON      ID_ALL_PM_DRAW
+    SEPARATOR
+    BUTTON      ID_QUARY_STATION_OUT
+    BUTTON      ID_QUARY_STATION_IN
+    BUTTON      ID_Quary_Tj
+    SEPARATOR
+    BUTTON      ID_QUARY_CONFIG_LTE_CELL
+    BUTTON      ID_QUARY_CONFIG_GSM_CELL
+    BUTTON      ID_QUARY_CONFIG_LTE
+    BUTTON      ID_QUARY_CONFIG_GSM
+    SEPARATOR
+    BUTTON      ID_Pm_LTE_Region
+    SEPARATOR
+    BUTTON      ID_Log_System
+    BUTTON      ID_Log_Bug
+    BUTTON      ID_Log_DATABASE
+    SEPARATOR
+    BUTTON      ID_User_Login
+    BUTTON      ID_APP_EXIT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "LTE 性能查询"
+    BEGIN
+        MENUITEM "LTE 性能图形查询",                  ID_LTE_PM_DRAW
+        MENUITEM "LTE 性能数据查询",                  ID_LTE_PM_DATA
+        MENUITEM SEPARATOR
+        MENUITEM "LTE 性能数据查询_小区",               ID_LTE_PM_DATA_CELL
+        MENUITEM "LTE 性能数据查询_实时",               ID_LTE_PM_DATA_REAL
+        MENUITEM SEPARATOR
+        MENUITEM "LTE 性能数据计算_小区",               ID_LTE_PM_DATA_CAL
+        MENUITEM SEPARATOR
+        MENUITEM "LTE 性能图形查询_原始",               ID_LTE_PM_DRAW_Init
+        MENUITEM "LTE 性能数据查询_原始",               ID_LTE_PM_DATA_Init
+    END
+    POPUP "GSM 性能查询"
+    BEGIN
+        MENUITEM "GSM 性能图形查询",                  ID_GSM_PM_DRAW
+        MENUITEM "GSM 性能数据查询",                  ID_GSM_PM_DATA
+    END
+    POPUP "性能预警"
+    BEGIN
+        MENUITEM "性能预警查询",                      ID_ALARM_PM
+        MENUITEM SEPARATOR
+        MENUITEM "LTE 低流量小区实时",                 ID_ALARM_LL_REAL
+        MENUITEM "LTE 低流量小区查询",                 ID_ALARM_LL_CELL
+    END
+    POPUP "网元查询"
+    BEGIN
+        MENUITEM "站址查询",                        ID_QUARY_STATION
+        MENUITEM "站址地图查询",                      ID_QUARY_STATION_Map
+        MENUITEM SEPARATOR
+        MENUITEM "TD-LTE网元查询",                  ID_QUARY_TDLTE
+        MENUITEM "GSM网元查询",                     ID_Quary_GSM
+        MENUITEM "GSM高铁网元查询",                   ID_QUARY_GSM_GT
+        MENUITEM SEPARATOR
+    END
+    POPUP "配置管理"
+    BEGIN
+        MENUITEM "LTE 配置查询",                    ID_Cm_LTE_Quary
+        MENUITEM "LTE-Tdd相邻关系",                 ID_Cm_LTE_Relation
+        MENUITEM SEPARATOR
+        MENUITEM "LTE 配置管理_文件",                 ID_Cm_LTE_File
+        MENUITEM "LTE 配置管理_参数",                 ID_Cm_LTE_Para
+    END
+    POPUP "网络配置"
+    BEGIN
+        MENUITEM "区域设置",                        ID_Config_Region
+        MENUITEM "站址管理",                        ID_Config_Station
+        MENUITEM SEPARATOR
+        MENUITEM "BTS 配置",                      ID_Config_BTS
+        MENUITEM "E_NodeB 配置",                  ID_Config_E_NodeB
+        MENUITEM SEPARATOR
+        MENUITEM "GSM Cell配置",                  ID_Config_GSM_Cell
+        MENUITEM "LTE Cell配置",                  ID_Config_LTE_Cell
+        MENUITEM SEPARATOR
+        MENUITEM "XML文件工具",                     ID_Config_Tools
+    END
+    POPUP "性能配置"
+    BEGIN
+        MENUITEM "LTE_性能管理_原始",                 ID_Pm_LTE
+        MENUITEM "LTE_性能管理_计算",                 ID_Pm_LTE_Cal
+        MENUITEM "LTE_性能管理_区域",                 ID_Pm_LTE_Region
+        MENUITEM SEPARATOR
+        MENUITEM "LTE_性能查询模板_小区",               ID_Pm_LTE_Cas
+        MENUITEM "LTE_性能查询模板_性能",               ID_Pm_LTE_Cas_PM
+        MENUITEM "LTE_性能查询模板_计算",               ID_Pm_LTE_Cas_Cal
+        MENUITEM SEPARATOR
+        MENUITEM "LTE_性能预警_配置",                 ID_Pm_LTE_ALARM
+        MENUITEM SEPARATOR
+        MENUITEM "GSM_性能管理",                    ID_Pm_GSM
+        MENUITEM "GSM_性能计算_CELL_HO",            ID_Pm_GSM_Cal_CELL
+        MENUITEM "GSM_性能计算_BSC",                ID_Pm_GSM_Cal_BSC
+    END
+    POPUP "系统参数"
+    BEGIN
+        MENUITEM "参数配置",                        ID_Config_Para
+        MENUITEM "代维管理",                        ID_Config_Agency
+    END
+    POPUP "日志管理"
+    BEGIN
+        MENUITEM "系统日志",                        ID_Log_System
+        MENUITEM "系统异常",                        ID_Log_Bug
+        MENUITEM SEPARATOR
+        MENUITEM "数据库容量",                       ID_Log_DATABASE
+        MENUITEM "数据库容量_GSM",                   ID_Log_DATABASE_GSM
+    END
+    POPUP "用户管理"
+    BEGIN
+        MENUITEM "用户管理",                        ID_User_Setup
+        MENUITEM "密码修改",                        ID_User_PassWord
+        MENUITEM "用户登录",                        ID_User_Login
+        MENUITEM SEPARATOR
+        MENUITEM "权限配置",                        ID_User_Role
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "窗口"
+    BEGIN
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "系统帮助",                        ID_32774
+        MENUITEM "关于 移动多网融合性能优化分析系统",           ID_APP_ABOUT
+    END
+END
+
+IDR_RTSPAATYPE MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        POPUP "工具栏和停靠窗口(&T)"
+        BEGIN
+            MENUITEM "<占位符>",                       ID_VIEW_TOOLBAR
+        END
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio.NET 2005(&5)",  ID_VIEW_APPLOOK_VS_2005
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                    ID_WINDOW_NEW
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 Station(&A)...",           ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU 
+BEGIN
+    POPUP "编辑"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_THEME_MENU MENU 
+BEGIN
+    MENUITEM "Office 2007 (蓝色样式)(&B)",      ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (黑色样式)(&L)",      ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (银色样式)(&S)",      ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (水绿色样式)(&A)",     ID_VIEW_APPLOOK_OFF_2007_AQUA
+END
+
+IDR_GSM_CELL MENU 
+BEGIN
+    POPUP "CON_GSM_CELL"
+    BEGIN
+        MENUITEM "删除 (可以选多行)",                  ID_CON_GSM_CELL_DEL
+    END
+END
+
+IDR_TD_CELL MENU 
+BEGIN
+    POPUP "CON_TD_CELL"
+    BEGIN
+        MENUITEM "删除 (可以选多行)",                  ID_CON_TD_CELL_DEL
+    END
+END
+
+IDR_LTE_CELL MENU 
+BEGIN
+    POPUP "CON_LTE_CELL"
+    BEGIN
+        MENUITEM "删除 (可以选多行)",                  ID_CON_LTE_CELL_DEL
+    END
+END
+
+IDR_STATION_DEL MENU 
+BEGIN
+    POPUP "CON_STATION_DEL"
+    BEGIN
+        MENUITEM "删除 (可以选多行)",                  ID_CON_STATION_DEL
+    END
+END
+
+IDR_GSM_BTS_DEL MENU 
+BEGIN
+    POPUP "CON_GSM_BTS_DEL"
+    BEGIN
+        MENUITEM "删除 (可以选多行)",                  ID_CON_GSM_BTS_DEL
+    END
+END
+
+IDR_TD_NODEB_DEL MENU 
+BEGIN
+    POPUP "CON_LTE_NODEB_DEL"
+    BEGIN
+        MENUITEM "删除 (可以选多行)",                  ID_CON_TD_NODEB_DEL
+    END
+END
+
+IDR_LTE_NODEB_DEL MENU 
+BEGIN
+    POPUP "CON_LTE_NODEB_DEL"
+    BEGIN
+        MENUITEM "删除 (可以选多行)",                  ID_CON_LTE_NODEB_DEL
+    END
+END
+
+IDR_PM_LTE_CASE_CELL_DEL MENU 
+BEGIN
+    POPUP "CON_GSM_BTS_DEL"
+    BEGIN
+        MENUITEM "删除 (可以选多行)",                  ID_PM_LTE_CASE_CELL_DEL
+    END
+END
+
+IDR_PM_LTE_CAL_DEL MENU 
+BEGIN
+    POPUP "CON_LTE_CAL_DEL"
+    BEGIN
+        MENUITEM "删除 (可以选多行)",                  ID_PM_LTE_CAL_DEL
+    END
+END
+
+IDR_PM_LTE_REGION_DEL MENU 
+BEGIN
+    POPUP "CON_LTE_REGION_DEL"
+    BEGIN
+        MENUITEM "删除 (可以选多行)",                  ID_PM_LTE_REGION_DEL
+    END
+END
+
+IDR_PM_LTE_CASE_CELL_M_DEL MENU 
+BEGIN
+    POPUP "CON_GSM_BTS_DEL"
+    BEGIN
+        MENUITEM "删除 (可以选多行)",                  ID_PM_LTE_CASE_CELL_M_DEL
+    END
+END
+
+IDR_PM_LTE_CASE_PM_DEL MENU 
+BEGIN
+    POPUP "CON_GSM_BTS_DEL"
+    BEGIN
+        MENUITEM "删除 (可以选多行)",                  ID_PM_LTE_CASE_PM_DEL
+    END
+END
+
+IDR_PM_LTE_CASE_PM_M_DEL MENU 
+BEGIN
+    POPUP "CON_GSM_BTS_DEL"
+    BEGIN
+        MENUITEM "删除 (可以选多行)",                  ID_PM_LTE_CASE_PM_M_DEL
+    END
+END
+
+IDR_ALARM_PM MENU 
+BEGIN
+    POPUP "ALARM_PM"
+    BEGIN
+        MENUITEM "性能明细查询",                      ID_ALARM_PM_CELL
+    END
+END
+
+IDR_PM_LTE_Alarm_DEL MENU 
+BEGIN
+    POPUP "CON_LTE_CAL_DEL"
+    BEGIN
+        MENUITEM "删除 (可以选多行)",                  ID_PM_LTE_Alarm_DEL
+    END
+END
+
+IDR_PM_LTE_CASE_CAL_DEL MENU 
+BEGIN
+    POPUP "CON_LTE_CASE_CAL_DEL"
+    BEGIN
+        MENUITEM "删除 (可以选多行)",                  ID_PM_LTE_CASE_CAL_DEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 270, 173
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 移动多网融合性能优化分析系统"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "移动多网融合性能优化分析系统",IDC_STATIC,140,8,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016",IDC_STATIC,140,40,114,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,138,94,125,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,138,165,125,1
+    LTEXT           "中国移动辽宁公司大连分公司",IDC_COMPANY,140,57,90,8
+    LTEXT           "大连理工大学 信息与通信工程学院",IDC_STATIC,144,118,106,8
+    LTEXT           "Tel: (0411)84706262,13500754382",IDC_STATIC,144,135,115,8
+    LTEXT           "E_mail: xieyp@dlut.edu.cn",IDC_STATIC,144,149,83,8
+    LTEXT           "版本:1.0",IDC_STATIC,140,24,114,8,SS_NOPREFIX
+    LTEXT           "使用期限：2020-12-31",IDC_STATIC,140,74,72,8
+    LTEXT           "【系统开发】",IDC_STATIC,141,102,42,8
+    CONTROL         314,IDC_STATIC,"Static",SS_BITMAP,8,7,124,172
+END
+
+IDD_USER_LOGIN DIALOGEX 0, 0, 243, 132
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户登录"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,81,26,127,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,81,58,127,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "登录",IDOK,46,95,58,16
+    LTEXT           "登录账号：",IDC_STATIC,33,29,41,8
+    LTEXT           "登录密码：",IDC_STATIC,33,61,41,8
+    PUSHBUTTON      "取消",IDC_CANCEL,138,94,62,16
+END
+
+IDD_LOG_SYSTEM DIALOGEX 0, 0, 634, 360
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "日志数量：",IDC_STATIC,10,11,41,8
+    LTEXT           "查询日期：",IDC_STATIC,112,11,41,8
+    CONTROL         "",IDC_BEG_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,154,8,60,15
+    LTEXT           "天数：",IDC_STATIC,231,11,25,8
+    COMBOBOX        IDC_COMBO1,256,8,29,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LOG_SUM,52,8,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "导出",IDC_EXCEL,524,8,50,14
+    PUSHBUTTON      "查询",IDC_QUARY,462,8,50,14
+    LTEXT           "查询条件：",IDC_STATIC,302,11,41,8
+    EDITTEXT        IDC_KEY,343,8,102,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,30,620,323
+END
+
+IDD_LOG_BUG DIALOGEX 0, 0, 634, 360
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "异常数量：",IDC_STATIC,10,11,41,8
+    LTEXT           "查询日期：",IDC_STATIC,112,11,41,8
+    CONTROL         "",IDC_BEG_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,154,8,60,15
+    LTEXT           "天数：",IDC_STATIC,231,11,25,8
+    COMBOBOX        IDC_COMBO1,256,8,29,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LOG_SUM,52,8,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "导出",IDC_EXCEL,524,8,50,14
+    PUSHBUTTON      "查询",IDC_QUARY,462,8,50,14
+    LTEXT           "查询条件：",IDC_STATIC,302,11,41,8
+    EDITTEXT        IDC_KEY,343,8,102,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,30,620,323
+END
+
+IDD_LOG_DATABASE DIALOGEX 0, 0, 502, 241
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,25,395,205
+    PUSHBUTTON      "导出",IDC_EXCEL,184,7,50,14
+    LTEXT           "数据库容量：",IDC_STATIC,11,10,54,10
+    EDITTEXT        IDC_STATION_SUM,58,7,43,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "容量单位：KB",IDC_STATIC,122,10,54,10
+    LTEXT           "数据库剩余容量：",IDC_STATIC,257,10,65,10
+    EDITTEXT        IDC_STATION_SUM3,325,7,43,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Log剩余容量：",IDC_STATIC,390,10,53,10
+    EDITTEXT        IDC_STATION_SUM4,446,7,43,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_USER_PASSWORD DIALOGEX 0, 0, 243, 145
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "密码修改"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,79,17,129,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,79,46,129,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,79,75,129,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,56,112,50,14
+    PUSHBUTTON      "取消",IDCANCEL,134,112,50,14
+    LTEXT           "原始密码：",IDC_STATIC,36,20,41,8
+    LTEXT           "登录密码：",IDC_STATIC,36,49,41,8
+    LTEXT           "重复密码：",IDC_STATIC,36,78,41,8
+    LTEXT           "登录密码不能超过12个字母/数字",IDC_STATIC,80,92,116,8
+END
+
+IDD_USER_ROLE DIALOGEX 0, 0, 533, 266
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "权限配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,30,204,229,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_MSC_KPI_Excel,99,10,50,14
+    LTEXT           "角色数量：",IDC_STATIC,12,12,41,10
+    EDITTEXT        IDC_STATION_SUM,51,10,40,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "  增加角色  ",IDC_STATIC,347,6,179,81,0,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "增加",IDC_ADD_MSC_KPI2,407,67,50,14
+    EDITTEXT        IDC_EDIT65,391,27,122,14,ES_AUTOHSCROLL
+    LTEXT           "角色名称",IDC_STATIC,357,30,33,8
+    PUSHBUTTON      "删除",IDC_BUTTON23,407,141,50,14
+    EDITTEXT        IDC_EDIT71,391,119,122,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "角色名称",IDC_STATIC,357,121,33,8
+    LTEXT           "角色备注",IDC_STATIC,357,49,33,8
+    EDITTEXT        IDC_EDIT67,391,47,122,14,ES_AUTOHSCROLL
+    GROUPBOX        "  删除角色  ",IDC_STATIC,347,96,179,69,0,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT72,392,194,122,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "角色名称",IDC_STATIC,358,197,33,8
+    GROUPBOX        " 修改角色  ",IDC_STATIC,347,172,179,87,0,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "修改",IDC_BUTTON25,407,237,50,14
+    LTEXT           "角色备注",IDC_STATIC,358,218,33,8
+    EDITTEXT        IDC_EDIT69,392,216,122,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,218,31,120,228,WS_EX_CLIENTEDGE
+    CONTROL         "角色",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,162,12,32,10
+    PUSHBUTTON      "全选",IDC_ALL,217,10,35,14
+    PUSHBUTTON      "全不选",IDC_NULL,260,10,35,14
+    PUSHBUTTON      "保存",IDC_SAVE,303,10,35,14
+END
+
+IDD_USER_SETUP DIALOGEX 0, 0, 549, 326
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "增加",IDC_ADD,74,231,50,14
+    PUSHBUTTON      "删除",IDC_DELETE,341,231,50,14
+    PUSHBUTTON      "导出",IDC_EXCEL,430,231,50,14
+    LTEXT           "用户数量：",IDC_STATIC,11,12,63,8
+    EDITTEXT        IDC_EDIT1,49,10,40,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "  用户增加/修改  ",IDC_STATIC,7,258,535,61
+    LTEXT           "用户姓名",IDC_STATIC,24,276,43,8
+    EDITTEXT        IDC_EDIT2,60,273,62,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确认",IDC_ADD2,409,273,50,14
+    PUSHBUTTON      "修改",IDC_MODIFY,163,231,50,14
+    LTEXT           "角色",IDC_STATIC,139,276,19,8
+    LTEXT           "账号",IDC_STATIC,248,276,20,8
+    EDITTEXT        IDC_EDIT6,266,273,62,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "取消",IDC_BUTTON1,473,273,50,14
+    COMBOBOX        IDC_POOL,160,275,70,49,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "用户有效",IDC_SEND_FLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,347,275,48,10
+    LTEXT           "备注",IDC_STATIC,39,297,20,8
+    EDITTEXT        IDC_EDIT7,59,294,241,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "密码清除",IDC_PASSWORD,252,231,50,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,29,535,193
+END
+
+IDD_CON_STATION DIALOGEX 0, 0, 621, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "查询",IDC_QUARY,283,10,50,14
+    LTEXT           "Key：",IDC_STATIC,91,13,21,8
+    EDITTEXT        IDC_KEY,114,10,87,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,205,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,54,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "站址数量：",IDC_STATIC,12,13,41,8
+    PUSHBUTTON      "机房导入",IDC_ELEMENT,395,10,50,14
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,55,440,149,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_EXCEL2,339,10,50,14
+    PUSHBUTTON      "资源点导入",IDC_ELEMENT2,451,10,50,14
+    PUSHBUTTON      "站点导入",IDC_ELEMENT3,507,10,50,14
+    PUSHBUTTON      "区域同步",IDC_BUTTON2,563,10,50,14
+    LTEXT           "【导入顺序：机房、资源点、站点，基站、小区，最后再区域同步，即小区区域同步到机房、资源点】",IDC_STATIC,202,32,367,8
+END
+
+IDD_USER_ONLINE DIALOGEX 0, 0, 634, 360
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "在线用户数量：",-1,10,11,57,8
+    EDITTEXT        IDC_LOG_SUM,70,8,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "导出",IDC_EXCEL,186,8,50,14
+    PUSHBUTTON      "刷新",IDC_QUARY,124,8,50,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,30,620,323
+END
+
+IDD_CON_REGION DIALOGEX 0, 0, 208, 208
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "区域设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,25,194,102
+    PUSHBUTTON      "增加",IDC_ADD,29,133,38,14
+    PUSHBUTTON      "删除",IDC_DELETE,84,133,38,14
+    PUSHBUTTON      "导出",IDC_EXCEL,140,133,38,14
+    LTEXT           "区域数量：",IDC_STATIC,11,11,62,8
+    EDITTEXT        IDC_EDIT1,54,7,40,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        " 区域增加 ",IDC_STATIC,7,164,193,37
+    LTEXT           "区域：",IDC_STATIC,23,181,27,8
+    EDITTEXT        IDC_EDIT2,49,178,53,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确认",IDC_ADD2,111,178,34,14
+    PUSHBUTTON      "取消",IDC_BUTTON2,153,178,34,14
+END
+
+IDD_CON_BTS DIALOGEX 0, 0, 470, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "查询",IDC_QUARY,283,10,50,14
+    LTEXT           "Key：",IDC_STATIC,91,13,21,8
+    EDITTEXT        IDC_KEY,114,10,87,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,205,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,50,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "BTS数量：",IDC_STATIC,12,13,37,8
+    PUSHBUTTON      "BTS 导入",IDC_ELEMENT,399,10,50,14
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,36,440,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "BTS 导出",IDC_EXCEL2,342,10,50,14
+END
+
+IDD_CON_GSM_Cell DIALOGEX 0, 0, 460, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "查询",IDC_QUARY,283,10,50,14
+    LTEXT           "Key：",IDC_STATIC,91,13,21,8
+    EDITTEXT        IDC_KEY,114,10,87,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,205,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,54,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Cell数量：",IDC_STATIC,12,13,36,8
+    PUSHBUTTON      "GSM Cell 导入",IDC_ELEMENT,399,10,50,14
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,36,440,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "GSM Cell 导出",IDC_EXCEL2,342,10,50,14
+END
+
+IDD_CON_TD_Cell DIALOGEX 0, 0, 460, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "查询",IDC_QUARY,283,10,50,14
+    LTEXT           "Key：",IDC_STATIC,91,13,21,8
+    EDITTEXT        IDC_KEY,114,10,87,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,205,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,54,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Cell数量：",IDC_STATIC,12,13,36,8
+    PUSHBUTTON      "TD Cell 导入",IDC_ELEMENT,399,10,50,14
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,36,440,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "TD Cell 导出",IDC_EXCEL2,342,10,50,14
+END
+
+IDD_CON_LTE_Cell DIALOGEX 0, 0, 682, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "查询",IDC_QUARY,283,10,50,14
+    LTEXT           "Key：",IDC_STATIC,91,13,21,8
+    EDITTEXT        IDC_KEY,114,10,87,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,205,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,54,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Cell数量：",IDC_STATIC,12,13,36,8
+    PUSHBUTTON      "LTE Cell 导入",IDC_ELEMENT,399,10,50,14
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,36,440,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "LTE Cell 导出",IDC_EXCEL2,342,10,50,14
+    LTEXT           "【注：请根据 LTE Cell 更新日期，手动删除过期的 LTE Cell ！】",IDC_STATIC,453,13,220,8
+END
+
+IDD_CON_E_NodeB DIALOGEX 0, 0, 698, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "查询",IDC_QUARY,295,10,50,14
+    LTEXT           "Key：",IDC_STATIC,103,13,21,8
+    EDITTEXT        IDC_KEY,126,10,87,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,217,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,66,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "E_NodeB数量：",IDC_STATIC,12,13,54,8
+    PUSHBUTTON      "E_NodeB导入",IDC_ELEMENT,411,10,50,14
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,9,36,459,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "E_NodeB导出",IDC_EXCEL2,354,10,50,14
+    LTEXT           "【注：请根据E_NodeB更新日期，手动删除过期的E_NodeB！】",IDC_STATIC,465,13,220,8
+END
+
+IDD_CON_GSM_Cell_Input DIALOGEX 0, 0, 618, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GSM_Cell_导入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始导入",IDC_BUTTON1,412,11,50,14
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,9,11,50,14
+    EDITTEXT        IDC_EDIT1,65,11,292,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,141,293,72,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,53,560,79,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,314,141,253,71,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATION_SUM,367,11,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "异常导出",IDC_BUTTON6,505,11,50,14
+    CONTROL         "打开文件",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,560,14,48,10
+    CONTROL         "在网",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,469,14,32,10
+    LTEXT           "【绿色：新增；  兰色：更新；  红色：异常】",IDC_STATIC,63,30,176,8
+END
+
+IDD_CON_TD_Cell_Input DIALOGEX 0, 0, 615, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TD_Cell_导入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始导入",IDC_BUTTON1,412,11,50,14
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,9,11,50,14
+    EDITTEXT        IDC_EDIT1,65,11,292,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,141,293,72,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,48,560,84,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,314,141,253,71,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATION_SUM,367,11,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "异常导出",IDC_BUTTON6,501,11,50,14
+    CONTROL         "打开文件",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,557,14,48,10
+    CONTROL         "在网",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,469,14,32,10
+    LTEXT           "【绿色：新增；  兰色：更新；  红色：异常】",IDC_STATIC,63,30,176,8
+END
+
+IDD_CON_LTE_Cell_Input DIALOGEX 0, 0, 620, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LTE_Cell_导入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始导入",IDC_BUTTON1,412,11,50,14
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,9,11,50,14
+    EDITTEXT        IDC_EDIT1,65,11,292,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,141,293,72,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,48,560,84,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,314,141,253,71,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATION_SUM,367,11,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "异常导出",IDC_BUTTON6,506,11,50,14
+    CONTROL         "打开文件",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,562,14,48,10
+    CONTROL         "在网",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,469,14,32,10
+    LTEXT           "【绿色：新增；  兰色：更新；  红色：异常】",IDC_STATIC,63,30,176,8
+END
+
+IDD_CON_BTS_Input DIALOGEX 0, 0, 585, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BTS_导入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始导入",IDC_BUTTON1,412,11,50,14
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,9,11,50,14
+    EDITTEXT        IDC_EDIT1,65,11,292,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,141,293,72,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,49,560,83,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,314,141,253,71,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATION_SUM,367,11,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "异常导出",IDC_BUTTON6,467,11,50,14
+    CONTROL         "打开文件",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,525,13,48,10
+    LTEXT           "【绿色：新增；  兰色：更新；  红色：异常】",IDC_STATIC,63,30,176,8
+END
+
+IDD_CON_E_NodeB_Input DIALOGEX 0, 0, 585, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "E_NodeB_导入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始导入",IDC_BUTTON1,412,11,50,14
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,9,11,50,14
+    EDITTEXT        IDC_EDIT1,65,11,292,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,141,293,72,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,47,560,85,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,314,141,253,71,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATION_SUM,367,11,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "异常导出",IDC_BUTTON6,467,11,50,14
+    CONTROL         "打开文件",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,525,13,48,10
+    LTEXT           "【绿色：新增；  兰色：更新；  红色：异常】",IDC_STATIC,63,30,176,8
+END
+
+IDD_CON_Station_Input DIALOGEX 0, 0, 585, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "机房_导入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始导入",IDC_BUTTON1,412,11,50,14
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,9,11,50,14
+    EDITTEXT        IDC_EDIT1,65,11,292,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,141,293,72,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,48,560,84,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,314,141,253,71,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATION_SUM,367,11,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "异常导出",IDC_BUTTON6,467,11,50,14
+    CONTROL         "打开文件",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,525,13,48,10
+    LTEXT           "【机房类型：无线机房、交换机房】     【绿色：新增；  兰色：更新；  无色：类型不一致】",IDC_STATIC,63,30,337,8
+END
+
+IDD_CON_Station_Input_R DIALOGEX 0, 0, 585, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "资源点_导入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始导入",IDC_BUTTON1,412,11,50,14
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,9,11,50,14
+    EDITTEXT        IDC_EDIT1,65,11,292,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,141,293,72,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,49,560,83,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,314,141,253,71,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATION_SUM,367,11,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "异常导出",IDC_BUTTON6,467,11,50,14
+    CONTROL         "打开文件",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,525,13,48,10
+    LTEXT           "【资源点类型：无线网络资源点】     【绿色：新增；  兰色：更新；  无色：类型不一致】",IDC_STATIC,63,30,356,8
+END
+
+IDD_CON_Station_Input_L DIALOGEX 0, 0, 585, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "站点_导入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始导入",IDC_BUTTON1,412,11,50,14
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,9,11,50,14
+    EDITTEXT        IDC_EDIT1,65,11,292,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,141,293,72,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,52,560,80,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,314,141,253,71,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATION_SUM,367,11,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "异常导出",IDC_BUTTON6,467,11,50,14
+    CONTROL         "打开文件",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,525,13,48,10
+    LTEXT           "【更新条件：经度、纬度发生变化。】",IDC_STATIC,63,30,171,8
+END
+
+IDD_PER_Config DIALOGEX 0, 0, 620, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "导入",IDC_QUARY,504,9,50,14
+    EDITTEXT        IDC_SUM_ALARM,56,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "配置数量：",-1,12,13,41,8
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,36,537,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_EXCEL2,560,9,50,14
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,149,9,50,14
+    EDITTEXT        IDC_EDIT1,205,9,292,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "查询",IDC_QUARY2,93,9,50,14
+END
+
+IDD_ALL_PM_DRAW DIALOGEX 0, 0, 857, 243
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE1,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,174,132,158,101
+    LTEXT           "日期：",IDC_STATIC,262,11,25,8
+    CONTROL         "",IDC_BEG_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,285,7,59,15
+    LTEXT           "天数：",IDC_STATIC,349,10,25,8
+    COMBOBOX        IDC_COMBO1,371,7,28,338,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "单天",IDC_CK_DAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,538,9,29,10
+    CONTROL         "多线",IDC_CK_MUTI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,572,9,32,10
+    CONTROL         "静态",IDC_CK_S,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,608,9,32,10
+    CONTROL         "名称",IDC_CK_VALUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,644,9,32,10
+    CONTROL         "数据点",IDC_YSCALE2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,678,9,40,10
+    CONTROL         "",IDC_CHARTVIEW,"Static",SS_BITMAP,340,135,15,13
+    PUSHBUTTON      "清除",IDC_DELETE,763,7,40,14
+    PUSHBUTTON      "刷新",IDC_REFRESH,719,7,40,14
+    PUSHBUTTON      "导出",IDC_BUTTON1,807,7,40,14
+    PUSHBUTTON      "性能选择",IDC_INSTANCE_DETAIL,489,7,40,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,132,157,100,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,27,691,96,WS_BORDER
+    GROUPBOX        "",IDC_DRAW_AAA,367,132,48,40
+    EDITTEXT        IDC_SUM_ALARM,30,7,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "数量",IDC_STATIC,8,10,17,8
+    PUSHBUTTON      "站址查询",IDC_QUARY,203,7,50,14
+    EDITTEXT        IDC_KEY,110,7,87,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO3,66,8,38,338,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "类型",IDC_STATIC,408,10,17,8
+    COMBOBOX        IDC_COMBO7,428,7,53,87,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PER_Input DIALOGEX 0, 0, 712, 236
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,9,140,239,72,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,10,35,454,96,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,260,140,204,71,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "异常导出",IDC_BUTTON6,652,10,50,14
+    PUSHBUTTON      "性能导入",IDC_BUTTON7,596,10,50,14
+    EDITTEXT        IDC_SUM_ALARM,55,10,37,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "性能数量：",IDC_STATIC,12,13,41,8
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,100,10,50,14
+    EDITTEXT        IDC_EDIT1,213,10,285,14,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO6,155,10,51,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "日期：",IDC_STATIC,506,13,25,8
+    CONTROL         "",IDC_BEG_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,529,10,59,15
+END
+
+IDD_CON_Station_Region DIALOGEX 0, 0, 243, 132
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "区域同步"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,115,27,66,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,115,59,66,14,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "区域同步",IDOK,91,96,58,16
+    LTEXT           "站址数 量：",IDC_STATIC,67,30,43,8
+    LTEXT           "同步数量：",IDC_STATIC,67,62,41,8
+END
+
+IDD_CON_XML_TOOLS DIALOGEX 0, 0, 912, 278
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,140,10,50,14
+    CONTROL         "",IDC_LIST6,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,145,206,122,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "文件名称：",IDC_STATIC,197,13,41,8
+    EDITTEXT        IDC_EDIT1,241,10,336,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "ObjType导出",IDC_BUTTON1,717,10,50,14
+    PUSHBUTTON      "Object导出",IDC_BUTTON2,772,10,50,14
+    CONTROL         "导出打开",IDC_Open_File,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,832,13,48,10
+    LTEXT           "文件类型：",IDC_STATIC,19,13,41,8
+    COMBOBOX        IDC_COMBO3,61,10,71,91,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "数量：",IDC_STATIC,587,13,25,8
+    EDITTEXT        IDC_SUM_ALARM,614,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST7,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,221,144,206,122,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,9,57,802,80,WS_BORDER
+    CONTROL         "",IDC_LIST8,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,436,143,368,122,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "子项列表",IDC_BUTTON5,655,10,50,14
+END
+
+IDD_PM_LTE DIALOGEX 0, 0, 620, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "生成性能表",IDC_QUARY,402,9,50,14,BS_VCENTER
+    EDITTEXT        IDC_SUM_ALARM,56,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "性能数量：",IDC_STATIC,12,13,41,8
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,36,537,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_EXCEL2,343,9,50,14
+    EDITTEXT        IDC_EDIT1,122,9,77,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_QUARY2,284,9,50,14
+    LTEXT           "Key：",IDC_STATIC,99,13,21,8
+    COMBOBOX        IDC_COMBO2,207,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CON_PARA DIALOGEX 0, 0, 187, 188
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "参数配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO1,112,28,46,338,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,112,47,46,338,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO9,112,66,46,338,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "保存",IDOK,65,166,58,16
+    LTEXT           "性能 FTP Log 保留天数：",IDC_STATIC,23,69,86,8
+    LTEXT           "性能(H)保留月数：",IDC_STATIC,42,30,67,8
+    LTEXT           "性能(M)保留天数：",IDC_STATIC,41,50,68,8
+    GROUPBOX        "  LTE 性能参数  ",IDC_STATIC,6,7,174,86,0,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_COMBO4,112,117,46,338,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO20,112,136,46,338,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "配置 FTP Log 保留天数：",IDC_STATIC,23,138,86,8
+    LTEXT           "配置保留月数：",IDC_STATIC,52,120,57,8
+    GROUPBOX        "  LTE 配置参数  ",IDC_STATIC,6,100,174,59,0,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+END
+
+IDD_LTE_PM_DATA DIALOGEX 0, 0, 732, 243
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "小区",IDC_STATIC,10,11,17,8
+    LTEXT           "查询日期",IDC_STATIC,294,11,33,8
+    CONTROL         "",IDC_BEG_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,331,8,60,15
+    LTEXT           "天数",IDC_STATIC,401,11,17,8
+    COMBOBOX        IDC_COMBO1,422,8,29,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LOG_SUM,31,8,28,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "性能导出",IDC_EXCEL,669,8,50,14
+    LTEXT           "Key",IDC_STATIC,67,11,13,8
+    EDITTEXT        IDC_KEY,83,8,73,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,133,265,99
+    LTEXT           "",IDC_STATIC_SLIT_PANE,13,30,601,96,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,287,133,265,99
+    PUSHBUTTON      "小区查询",IDC_BUTTON1,162,8,50,14
+    LTEXT           "性能",IDC_STATIC,544,11,17,8
+    COMBOBOX        IDC_COMBO3,564,8,65,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "类型",IDC_STATIC,462,11,17,8
+    COMBOBOX        IDC_COMBO7,482,8,53,87,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LOG_SUM2,634,8,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "数据量",IDC_STATIC,229,11,25,8
+    EDITTEXT        IDC_LOG_SUM3,257,8,28,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_LTE_PM_DRAW DIALOGEX 0, 0, 926, 243
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "日期：",IDC_STATIC,233,11,25,8
+    CONTROL         "",IDC_BEG_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,256,7,59,15
+    LTEXT           "天数：",IDC_STATIC,320,10,25,8
+    COMBOBOX        IDC_COMBO1,342,7,28,338,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "单天",IDC_CK_DAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,599,9,29,10
+    CONTROL         "多线",IDC_CK_MUTI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,633,9,32,10
+    CONTROL         "静态",IDC_CK_S,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,669,9,32,10
+    CONTROL         "名称",IDC_CK_VALUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,705,9,32,10
+    CONTROL         "数据点",IDC_YSCALE2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,739,9,40,10
+    CONTROL         "",IDC_CHARTVIEW,"Static",SS_BITMAP,340,135,15,13
+    PUSHBUTTON      "清除",IDC_DELETE,829,7,40,14
+    PUSHBUTTON      "刷新",IDC_REFRESH,780,7,40,14
+    PUSHBUTTON      "导出",IDC_BUTTON1,876,7,40,14
+    PUSHBUTTON      "性能选择",IDC_INSTANCE_DETAIL,459,7,40,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,132,157,100,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,27,691,96,WS_BORDER
+    GROUPBOX        "",IDC_DRAW_AAA,367,132,48,40
+    EDITTEXT        IDC_SUM_ALARM,29,7,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "数量",IDC_STATIC,8,10,17,8
+    PUSHBUTTON      "小区查询",IDC_QUARY,175,7,50,14
+    EDITTEXT        IDC_KEY,84,7,87,14,ES_AUTOHSCROLL
+    LTEXT           "Key",IDC_STATIC,67,10,13,8
+    LTEXT           "类型",IDC_STATIC,378,10,17,8
+    COMBOBOX        IDC_COMBO7,398,7,53,87,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "性能",IDC_STATIC,507,10,17,8
+    COMBOBOX        IDC_COMBO3,527,7,65,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PER_ALARM DIALOGEX 0, 0, 470, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "查询",IDC_QUARY,283,10,50,14
+    LTEXT           "Key：",IDC_STATIC,91,13,21,8
+    EDITTEXT        IDC_KEY,114,10,87,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,205,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,50,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "BTS数量：",IDC_STATIC,12,13,37,8
+    PUSHBUTTON      "BTS 导入",IDC_ELEMENT,399,10,50,14
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,36,440,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "BTS 导出",IDC_EXCEL2,342,10,50,14
+END
+
+IDD_LTE_PM_Draw_Select DIALOGEX 0, 0, 569, 302
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "性能选择"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_Master,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,8,25,227,266,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_LIST_Slave,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,269,26,292,265,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "性能类型",IDC_STATIC,15,11,33,8
+    COMBOBOX        IDC_COMBO7,55,8,76,87,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "==>",IDC_BUTTON1,238,122,28,14,0,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "<==",IDC_BUTTON3,238,156,28,14,0,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "选定",IDC_BUTTON2,238,88,28,14
+    LTEXT           "数量",IDC_STATIC,271,12,17,8
+    EDITTEXT        IDC_LOG_SUM,292,9,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "【选择性能，直接拖动即可。】",IDC_STATIC,138,11,113,8
+END
+
+IDD_PM_LTE_CASE_CELL DIALOGEX 0, 0, 574, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SUM_ALARM,56,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "模板数量：",IDC_STATIC,12,13,41,8
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,11,115,258,89,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_EXCEL2,245,9,50,14
+    PUSHBUTTON      "查询",IDC_QUARY2,186,9,50,14
+    LTEXT           "【点击鼠标右键，可删除模板信息；】",IDC_STATIC,361,12,159,8
+    EDITTEXT        IDC_SUM_ALARM2,143,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "小区数量：",IDC_STATIC,99,13,41,8
+    LTEXT           "",IDC_STATIC_SLIT_PANE,13,45,544,57,WS_BORDER
+    CONTROL         "",IDC_LIST5,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,280,115,258,89,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导入",IDC_EXCEL3,304,9,50,14
+END
+
+IDD_LOG_DATABASE_GSM DIALOGEX 0, 0, 420, 241
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,25,395,205
+    PUSHBUTTON      "导出",IDC_EXCEL,184,7,50,14
+    LTEXT           "数据库容量：",IDC_STATIC,11,10,54,10
+    EDITTEXT        IDC_STATION_SUM,58,7,43,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "容量单位：KB",IDC_STATIC,122,10,54,10
+END
+
+IDD_PM_GSM DIALOGEX 0, 0, 620, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SUM_ALARM,56,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Counter：",IDC_STATIC,17,13,35,8
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,36,537,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_EXCEL2,343,9,50,14
+    EDITTEXT        IDC_EDIT1,122,9,77,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_QUARY2,284,9,50,14
+    LTEXT           "Key：",IDC_STATIC,99,13,21,8
+    COMBOBOX        IDC_COMBO2,207,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PM_GSM_CELL_HO DIALOGEX 0, 0, 668, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "查询",IDC_QUARY,371,10,50,14
+    LTEXT           "Key：",IDC_STATIC,181,13,21,8
+    EDITTEXT        IDC_KEY,204,10,87,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,295,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,41,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "数量：",IDC_STATIC,13,13,24,8
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,36,440,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_EXCEL2,429,10,50,14
+    LTEXT           "类型：",IDC_STATIC,83,13,25,8
+    COMBOBOX        IDC_COMBO4,110,10,57,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "增加",IDC_EXCEL3,487,10,50,14
+    PUSHBUTTON      "修改",IDC_EXCEL4,545,10,50,14
+    PUSHBUTTON      "删除",IDC_EXCEL5,603,10,50,14
+END
+
+IDD_PM_GSM_UPDATE DIALOGEX 0, 0, 280, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "性能组保留天数修改"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT3,63,61,50,17,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_DLGMODALFRAME
+    DEFPUSHBUTTON   "修改",IDOK,113,97,58,16
+    EDITTEXT        IDC_EDIT1,63,9,193,17,ES_AUTOHSCROLL | ES_READONLY,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT2,63,35,193,17,ES_AUTOHSCROLL | ES_READONLY,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "性能组：",IDC_STATIC,25,14,33,8
+    LTEXT           "类型：",IDC_STATIC,33,40,25,8
+    LTEXT           "保留天数：",IDC_STATIC,17,66,41,8
+END
+
+IDD_PM_GSM_UPDATE_PM DIALOGEX 0, 0, 608, 184
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "性能_增加/修改"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT3,69,71,529,48,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL,WS_EX_DLGMODALFRAME
+    DEFPUSHBUTTON   "修改",IDOK,274,159,58,16
+    EDITTEXT        IDC_EDIT2,69,45,193,17,ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "性能组：",IDC_STATIC,31,24,33,8
+    LTEXT           "性能名称：",IDC_STATIC,23,50,41,8
+    LTEXT           "计算公式：",IDC_STATIC,23,76,41,8
+    EDITTEXT        IDC_EDIT4,313,19,193,17,ES_AUTOHSCROLL | ES_READONLY,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "类型：",IDC_STATIC,283,24,25,8
+    EDITTEXT        IDC_EDIT5,69,127,530,17,ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME
+    LTEXT           "ObjType：",IDC_STATIC,28,132,36,8
+    EDITTEXT        IDC_EDIT7,313,45,193,17,ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "单位：",IDC_STATIC,283,50,25,8
+    COMBOBOX        IDC_COMBO4,70,22,193,259,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PM_GSM_BSC DIALOGEX 0, 0, 723, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "查询",IDC_QUARY,370,10,50,14
+    LTEXT           "Key：",IDC_STATIC,181,13,21,8
+    EDITTEXT        IDC_KEY,204,10,87,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,295,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,41,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "数量：",IDC_STATIC,13,13,24,8
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,36,440,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_EXCEL2,427,10,50,14
+    LTEXT           "类型：",IDC_STATIC,83,13,25,8
+    COMBOBOX        IDC_COMBO4,110,10,57,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "增加",IDC_EXCEL3,484,10,50,14
+    PUSHBUTTON      "修改",IDC_EXCEL4,541,10,50,14
+    PUSHBUTTON      "删除",IDC_EXCEL5,598,10,50,14
+    PUSHBUTTON      "∑ 数据管理",IDC_EXCEL6,655,10,50,14
+END
+
+IDD_PM_GSM_BSC_ADD DIALOGEX 0, 0, 549, 412
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BSC_ ∑数据管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "增加",IDC_ADD,115,314,50,14
+    PUSHBUTTON      "删除",IDC_DELETE,289,314,50,14
+    PUSHBUTTON      "导出",IDC_EXCEL,376,314,50,14
+    LTEXT           "性能数量：",-1,11,12,43,8
+    EDITTEXT        IDC_EDIT1,56,10,40,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "  增加/修改  ",-1,7,341,535,61
+    LTEXT           "性能名称",-1,19,359,43,8
+    EDITTEXT        IDC_EDIT2,56,356,105,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确认",IDC_ADD2,431,356,50,14
+    PUSHBUTTON      "修改",IDC_MODIFY,202,314,50,14
+    LTEXT           "ObjType",-1,171,360,27,8
+    PUSHBUTTON      "取消",IDC_BUTTON1,485,356,50,14
+    COMBOBOX        IDC_POOL,377,357,48,123,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "计算公式",-1,19,380,43,8
+    EDITTEXT        IDC_EDIT7,55,377,479,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,30,535,275
+    EDITTEXT        IDC_EDIT3,203,356,142,14,ES_AUTOHSCROLL
+    LTEXT           "类型",-1,353,360,21,8
+    PUSHBUTTON      "更新∑表",IDC_BUTTON2,492,9,50,14
+END
+
+IDD_PM_LTE_CAL DIALOGEX 0, 0, 510, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "查询",IDC_QUARY,283,10,50,14
+    LTEXT           "Key：",IDC_STATIC,91,13,21,8
+    EDITTEXT        IDC_KEY,114,10,87,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,205,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,46,10,36,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "数量：",IDC_STATIC,18,13,25,8
+    PUSHBUTTON      "导入",IDC_ELEMENT,399,10,50,14
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,36,440,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_EXCEL2,342,10,50,14
+    LTEXT           "【右键删除】",IDC_STATIC,453,12,49,8
+END
+
+IDD_PM_LTE_CAL_Input DIALOGEX 0, 0, 582, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LTE_性能管理_计算__导入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始导入",IDC_BUTTON1,412,11,50,14
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,9,11,50,14
+    EDITTEXT        IDC_EDIT1,65,11,292,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,141,293,72,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,48,560,84,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,314,141,253,71,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATION_SUM,367,11,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "异常导出",IDC_BUTTON6,468,11,50,14
+    CONTROL         "打开文件",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,524,14,48,10
+    LTEXT           "【绿色：新增；  兰色：更新；  红色：异常】",IDC_STATIC,63,30,163,8
+END
+
+IDD_LTE_PM_DATA_Init DIALOGEX 0, 0, 732, 243
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "数量",IDC_STATIC,10,11,17,8
+    LTEXT           "查询日期",IDC_STATIC,285,11,33,8
+    CONTROL         "",IDC_BEG_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,322,8,60,15
+    LTEXT           "天数",IDC_STATIC,392,11,17,8
+    COMBOBOX        IDC_COMBO1,413,8,29,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LOG_SUM,31,8,28,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "性能导出",IDC_EXCEL,661,8,50,14
+    LTEXT           "Key",IDC_STATIC,67,11,13,8
+    EDITTEXT        IDC_KEY,83,8,73,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,133,265,99
+    LTEXT           "",IDC_STATIC_SLIT_PANE,13,30,601,96,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,287,133,265,99
+    PUSHBUTTON      "小区查询",IDC_BUTTON1,162,8,50,14
+    LTEXT           "性能",IDC_STATIC,535,11,17,8
+    COMBOBOX        IDC_COMBO3,555,8,65,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "类型",IDC_STATIC,453,11,17,8
+    COMBOBOX        IDC_COMBO7,473,8,53,87,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LOG_SUM2,626,8,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "数据量",IDC_STATIC,224,11,25,8
+    EDITTEXT        IDC_LOG_SUM3,252,8,28,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_LTE_PM_DRAW_Znit DIALOGEX 0, 0, 834, 243
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "日期：",IDC_STATIC,233,11,25,8
+    CONTROL         "",IDC_BEG_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,256,7,59,15
+    LTEXT           "天数：",IDC_STATIC,320,10,25,8
+    COMBOBOX        IDC_COMBO1,342,7,28,338,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "单天",IDC_CK_DAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,506,9,29,10
+    CONTROL         "多线",IDC_CK_MUTI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,540,9,32,10
+    CONTROL         "静态",IDC_CK_S,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,576,9,32,10
+    CONTROL         "名称",IDC_CK_VALUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,612,9,32,10
+    CONTROL         "数据点",IDC_YSCALE2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,646,9,40,10
+    CONTROL         "",IDC_CHARTVIEW,"Static",SS_BITMAP,340,135,15,13
+    PUSHBUTTON      "清除",IDC_DELETE,736,7,40,14
+    PUSHBUTTON      "刷新",IDC_REFRESH,687,7,40,14
+    PUSHBUTTON      "导出",IDC_BUTTON1,783,7,40,14
+    PUSHBUTTON      "性能选择",IDC_INSTANCE_DETAIL,459,7,40,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,132,157,100,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,27,691,96,WS_BORDER
+    GROUPBOX        "",IDC_DRAW_AAA,367,132,48,40
+    EDITTEXT        IDC_SUM_ALARM,29,7,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "数量",IDC_STATIC,8,10,17,8
+    PUSHBUTTON      "小区查询",IDC_QUARY,175,7,50,14
+    EDITTEXT        IDC_KEY,84,7,87,14,ES_AUTOHSCROLL
+    LTEXT           "Key",IDC_STATIC,67,10,13,8
+    LTEXT           "类型",IDC_STATIC,378,10,17,8
+    COMBOBOX        IDC_COMBO7,398,7,53,87,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_LTE_PM_Draw_Znit_Select DIALOGEX 0, 0, 596, 302
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "性能选择"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,8,25,207,266,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,248,26,340,265,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "性能类型",IDC_STATIC,11,11,33,8
+    COMBOBOX        IDC_COMBO7,48,8,56,87,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "==>",IDC_BUTTON1,217,122,28,14,0,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "<==",IDC_BUTTON3,217,156,28,14,0,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "选定",IDC_BUTTON2,217,88,28,14
+    LTEXT           "数量",IDC_STATIC,249,12,17,8
+    EDITTEXT        IDC_LOG_SUM,271,9,20,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "【选择性能，直接拖动即可。】",IDC_STATIC,107,11,113,8
+    PUSHBUTTON      "模板保存",IDC_BUTTON5,538,9,50,14
+    EDITTEXT        IDC_KEY,393,9,103,14,ES_AUTOHSCROLL
+    LTEXT           "模板名称",IDC_STATIC,356,12,33,8
+    CONTROL         "顺序调整",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,303,12,48,10
+    CONTROL         "共享",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,504,12,32,10
+END
+
+IDD_PM_LTE_REGION DIALOGEX 0, 0, 522, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "查询",IDC_QUARY,283,10,50,14
+    LTEXT           "Key：",IDC_STATIC,91,13,21,8
+    EDITTEXT        IDC_KEY,114,10,87,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,205,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,46,10,36,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "数量：",IDC_STATIC,18,13,25,8
+    PUSHBUTTON      "导入",IDC_ELEMENT,399,10,50,14
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,36,440,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_EXCEL2,342,10,50,14
+    LTEXT           "【右键删除】",IDC_STATIC,453,12,49,8
+END
+
+IDD_PM_LTE_REGION_Input DIALOGEX 0, 0, 582, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LTE_性能管理_区域__导入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始导入",IDC_BUTTON1,412,11,50,14
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,9,11,50,14
+    EDITTEXT        IDC_EDIT1,65,11,292,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,141,293,72,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,48,560,84,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,314,141,253,71,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATION_SUM,367,11,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "异常导出",IDC_BUTTON6,468,11,50,14
+    CONTROL         "打开文件",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,524,14,48,10
+    LTEXT           "【绿色：新增；  兰色：更新；  红色：异常】",IDC_STATIC,63,30,162,8
+END
+
+IDD_Alarm_PM DIALOGEX 0, 0, 746, 204
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "数量：",IDC_STATIC,10,11,25,8
+    LTEXT           "查询日期：",IDC_STATIC,72,11,41,8
+    CONTROL         "",IDC_BEG_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,114,8,60,15
+    LTEXT           "天数：",IDC_STATIC,182,11,25,8
+    COMBOBOX        IDC_COMBO1,207,8,29,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LOG_SUM,37,8,28,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "预警导出",IDC_EXCEL,502,8,50,14
+    PUSHBUTTON      "查询",IDC_QUARY,447,8,50,14
+    LTEXT           "查询条件：",IDC_STATIC,245,11,41,8
+    EDITTEXT        IDC_KEY,286,8,85,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,120,463,76
+    COMBOBOX        IDC_COMBO2,377,8,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "实时",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,615,11,32,10
+    CONTROL         "降序",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,649,11,32,10
+    PUSHBUTTON      "预警确认",IDC_EXCEL2,684,8,50,14
+    LTEXT           "",IDC_STATIC_SLIT_PANE,9,34,601,75,WS_BORDER
+    CONTROL         "",IDC_LIST9,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,479,119,132,77
+    PUSHBUTTON      "明细导出",IDC_EXCEL3,557,8,50,14
+END
+
+IDD_PM_LTE_CASE_CELL_Input DIALOGEX 0, 0, 582, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LTE_性能查询模板_小区__导入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始导入",IDC_BUTTON1,412,11,50,14
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,9,11,50,14
+    EDITTEXT        IDC_EDIT1,65,11,292,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,141,293,72,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,48,560,84,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,314,141,253,71,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATION_SUM,367,11,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "异常导出",IDC_BUTTON6,468,11,50,14
+    CONTROL         "打开文件",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,524,14,48,10
+    LTEXT           "【绿色：新增；  兰色：更新；  红色：异常】【注：只能导入本人模板或共享模板！！！】",IDC_STATIC,63,30,332,8
+END
+
+IDD_PM_LTE_CASE_PM DIALOGEX 0, 0, 574, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SUM_ALARM,56,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "模板数量：",IDC_STATIC,12,13,41,8
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,11,115,258,89,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_EXCEL2,245,9,50,14
+    PUSHBUTTON      "查询",IDC_QUARY2,186,9,50,14
+    LTEXT           "【点击鼠标右键，可删除模板信息；】",IDC_STATIC,361,12,159,8
+    EDITTEXT        IDC_SUM_ALARM2,143,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "性能数量：",IDC_STATIC,99,13,41,8
+    LTEXT           "",IDC_STATIC_SLIT_PANE,13,45,544,57,WS_BORDER
+    CONTROL         "",IDC_LIST5,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,280,115,258,89,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导入",IDC_EXCEL3,304,9,50,14
+END
+
+IDD_PM_LTE_CASE_PM_Input DIALOGEX 0, 0, 582, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LTE_性能查询模板_性能__导入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始导入",IDC_BUTTON1,412,11,50,14
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,9,11,50,14
+    EDITTEXT        IDC_EDIT1,65,11,292,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,141,293,72,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,48,560,84,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,314,141,253,71,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATION_SUM,367,11,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "异常导出",IDC_BUTTON6,468,11,50,14
+    CONTROL         "打开文件",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,524,14,48,10
+    LTEXT           "【绿色：新增；  兰色：更新；  红色：异常】【注：只能导入本人模板！！！】",IDC_STATIC,63,30,281,8
+END
+
+IDD_LTE_PM_DATA_CELL DIALOGEX 0, 0, 975, 243
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "小区",IDC_STATIC,10,11,17,8
+    LTEXT           "日期",IDC_STATIC,216,11,17,8
+    CONTROL         "",IDC_BEG_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,237,8,56,15
+    LTEXT           "天数",IDC_STATIC,298,11,17,8
+    COMBOBOX        IDC_COMBO1,319,8,25,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LOG_SUM,31,8,25,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "明细导出",IDC_EXCEL,789,8,39,14
+    LTEXT           "Key",IDC_STATIC,95,11,13,8
+    EDITTEXT        IDC_KEY,111,8,59,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,133,186,99
+    LTEXT           "",IDC_STATIC_SLIT_PANE,13,51,601,75,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,208,133,158,99
+    PUSHBUTTON      "小区查询",IDC_BUTTON1,172,8,39,14
+    LTEXT           "类型",IDC_STATIC,352,11,17,8
+    COMBOBOX        IDC_COMBO7,372,8,31,87,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "性能选择",IDC_EXCEL2,588,8,39,14
+    PUSHBUTTON      "查询",IDC_EXCEL3,407,8,39,14
+    PUSHBUTTON      "小区模板",IDC_EXCEL4,450,8,39,14
+    PUSHBUTTON      "性能模板",IDC_EXCEL5,546,8,39,14
+    LTEXT           "性能",IDC_STATIC,495,11,17,8
+    EDITTEXT        IDC_LOG_SUM2,516,8,24,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "全选",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,62,11,32,10
+    CONTROL         "",IDC_LIST9,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,373,133,242,99
+    PUSHBUTTON      "时段设置",IDC_EXCEL6,630,8,39,14
+    COMBOBOX        IDC_COMBO8,750,8,35,87,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "时段",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,675,10,32,10
+    PUSHBUTTON      "统计",IDC_EXCEL7,706,8,39,14
+    PUSHBUTTON      "统计导出",IDC_EXCEL8,832,8,39,14
+    EDITTEXT        IDC_KEY2,880,8,25,14,ES_AUTOHSCROLL
+    LTEXT           "正在查询",IDC_QUARY_NAME,217,38,33,8,NOT WS_VISIBLE
+    LTEXT           "",IDC_QUARY_DATA,256,36,283,12,NOT WS_VISIBLE,WS_EX_CLIENTEDGE
+END
+
+IDD_LTE_PM_DATA_CASE DIALOGEX 0, 0, 460, 288
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "小区模板"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,169,255
+    CONTROL         "",IDC_LIST7,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,187,7,266,254
+    PUSHBUTTON      "确定",IDC_enter,231,267,41,14
+    CONTROL         "全选",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,189,269,32,10
+    LTEXT           "数量",IDC_STATIC,348,270,17,8
+    EDITTEXT        IDC_LOG_SUM,370,267,28,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_LTE_PM_DATA_CELL_TIME DIALOGEX 0, 0, 463, 179
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "性能查询时段选择"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "确定",IDC_BUTTON2,205,156,51,14
+    CONTROL         "",IDC_BEG_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,80,28,56,15
+    LTEXT           "天数",IDC_STATIC,150,31,17,8
+    COMBOBOX        IDC_COMBO1,171,28,36,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_BEG_DATE2,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,80,52,56,15
+    LTEXT           "天数",IDC_STATIC,150,55,17,8
+    COMBOBOX        IDC_COMBO3,171,52,36,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_BEG_DATE3,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,80,76,56,15
+    LTEXT           "天数",IDC_STATIC,150,79,17,8
+    COMBOBOX        IDC_COMBO2,171,76,36,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_BEG_DATE4,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,80,100,56,15
+    LTEXT           "天数",IDC_STATIC,150,103,17,8
+    COMBOBOX        IDC_COMBO4,171,100,36,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_BEG_DATE5,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,80,124,56,15
+    LTEXT           "天数",IDC_STATIC,150,127,17,8
+    COMBOBOX        IDC_COMBO5,171,124,36,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "  日期设置  ",IDC_STATIC,9,9,215,140,0,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    GROUPBOX        "  时段设置  ",IDC_STATIC,240,9,213,141,0,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "小时",IDC_STATIC,373,31,17,8
+    COMBOBOX        IDC_COMBO10,398,29,36,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "小时",IDC_STATIC,373,55,17,8
+    COMBOBOX        IDC_COMBO11,398,53,36,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "小时",IDC_STATIC,373,79,17,8
+    COMBOBOX        IDC_COMBO12,398,77,36,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "小时",IDC_STATIC,373,103,17,8
+    COMBOBOX        IDC_COMBO13,398,101,36,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "小时",IDC_STATIC,373,127,17,8
+    COMBOBOX        IDC_COMBO14,398,125,36,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO15,318,28,36,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO16,318,52,36,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO17,318,76,36,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO18,318,100,36,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO19,318,124,36,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "【1】日期",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,32,52,10
+    CONTROL         "【2】日期",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,55,52,10
+    CONTROL         "【3】日期",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,79,52,10
+    CONTROL         "【4】日期",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,103,52,10
+    CONTROL         "【5】日期",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,127,52,10
+    CONTROL         "【1】小时",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,264,31,52,10
+    CONTROL         "【2】小时",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,264,54,52,10
+    CONTROL         "【3】小时",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,264,78,52,10
+    CONTROL         "【4】小时",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,264,102,52,10
+    CONTROL         "【5】小时",IDC_CHECK13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,264,126,52,10
+    PUSHBUTTON      "日期清除",IDC_BUTTON9,82,156,51,14
+    PUSHBUTTON      "时段清除",IDC_BUTTON10,328,156,51,14
+END
+
+IDD_ALARM_MESSAGE DIALOGEX 0, 0, 192, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "性能预警提示"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "新增 n 个预警",IDC_BUTTON1,65,47,70,14,NOT WS_TABSTOP
+END
+
+IDD_LTE_PM_DATA_REAL DIALOGEX 0, 0, 864, 243
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "小区",IDC_STATIC,12,11,17,8
+    LTEXT           "粒度",IDC_STATIC,223,11,17,8
+    EDITTEXT        IDC_LOG_SUM,33,8,25,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "明细导出",IDC_EXCEL,756,8,39,14
+    LTEXT           "Key",IDC_STATIC,97,11,13,8
+    EDITTEXT        IDC_KEY,113,8,59,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,12,133,186,99
+    LTEXT           "",IDC_STATIC_SLIT_PANE,12,30,601,96,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,208,133,158,99
+    PUSHBUTTON      "小区查询",IDC_BUTTON1,174,8,39,14
+    LTEXT           "类型",IDC_STATIC,372,11,17,8
+    COMBOBOX        IDC_COMBO7,392,8,31,87,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "性能选择",IDC_EXCEL2,670,8,39,14
+    PUSHBUTTON      "查询",IDC_EXCEL3,488,8,39,14
+    PUSHBUTTON      "小区模板",IDC_EXCEL4,531,8,39,14
+    PUSHBUTTON      "性能模板",IDC_EXCEL5,627,8,39,14
+    LTEXT           "性能",IDC_STATIC,576,11,17,8
+    EDITTEXT        IDC_LOG_SUM2,597,8,24,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "全选",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,64,11,32,10
+    CONTROL         "",IDC_LIST9,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,373,133,242,99
+    PUSHBUTTON      "预警导出",IDC_EXCEL8,799,8,39,14
+    CONTROL         "刷新",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,333,11,32,10
+    LTEXT           "静态",IDC_TIME,244,10,81,12,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "预警配置",IDC_EXCEL6,713,8,39,14
+    CONTROL         "单粒度预警",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,431,11,56,10
+END
+
+IDD_LTE_PM_DATA_REAL_LIMIT DIALOGEX 0, 0, 482, 258
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LTE性能_预警配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,25,466,174
+    PUSHBUTTON      "导出",IDC_EXCEL,427,7,38,14
+    LTEXT           "性能数量：",IDC_STATIC,11,10,41,8
+    EDITTEXT        IDC_EDIT1,54,7,40,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        " 预警设置 ",IDC_STATIC,6,210,467,41,0,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "性能：",IDC_STATIC,23,228,27,8
+    EDITTEXT        IDC_EDIT2,250,226,53,14,ES_AUTOHSCROLL
+    LTEXT           "预警门限：",IDC_STATIC,208,228,41,8
+    LTEXT           "预警类型：",IDC_STATIC,315,228,40,8
+    CONTROL         "预警有效",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,154,228,48,10
+    COMBOBOX        IDC_COMBO3,357,226,39,91,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT3,49,226,94,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "修改",IDC_BUTTON1,408,225,50,14
+    LTEXT           "【注：预警参数设置后，如果想永久有效，请在""性能选择""功能中，进行保存。】",IDC_STATIC,100,10,286,8
+END
+
+IDD_PM_LTE_ALARM DIALOGEX 0, 0, 576, 344
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LTE性能预警_配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,25,560,263
+    PUSHBUTTON      "导出",IDC_EXCEL,341,7,50,14
+    LTEXT           "性能数量：",IDC_STATIC,11,10,41,8
+    EDITTEXT        IDC_EDIT1,54,7,30,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        " 预警参数配置 ",IDC_STATIC,5,295,562,41,0,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "性能：",IDC_STATIC,61,313,27,8
+    EDITTEXT        IDC_EDIT2,288,311,53,14,ES_AUTOHSCROLL
+    LTEXT           "预警门限：",IDC_STATIC,246,313,41,8
+    LTEXT           "预警类型：",IDC_STATIC,353,313,40,8
+    CONTROL         "预警有效",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,313,48,10
+    COMBOBOX        IDC_COMBO3,395,311,39,91,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT3,87,311,94,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "修改",IDC_BUTTON1,450,310,50,14
+    EDITTEXT        IDC_EDIT4,122,7,77,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_QUARY2,283,7,50,14
+    LTEXT           "Key：",IDC_STATIC,99,10,21,8
+    COMBOBOX        IDC_COMBO5,207,8,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ALARM_LL_CELL DIALOGEX 0, 0, 285, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SUM_ALARM,56,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "小区数量：",-1,12,13,41,8
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,36,253,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_EXCEL2,212,9,50,14
+    PUSHBUTTON      "查询",IDC_QUARY2,153,9,50,14
+    PUSHBUTTON      "参数设置",IDC_QUARY3,94,9,50,14
+END
+
+IDD_ALARM_LL_CELL_TIME DIALOGEX 0, 0, 305, 188
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "低流量小区查询_参数设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_BEG_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,80,40,56,15
+    CONTROL         "",IDC_BEG_DATE2,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,80,64,56,15
+    CONTROL         "",IDC_BEG_DATE3,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,80,88,56,15
+    CONTROL         "",IDC_BEG_DATE4,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,80,112,56,15
+    CONTROL         "",IDC_BEG_DATE5,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,80,136,56,15
+    GROUPBOX        "  粒度设置  ",-1,8,25,289,134,0,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "M",-1,277,43,8,8
+    LTEXT           "M",-1,277,67,8,8
+    LTEXT           "M",-1,277,91,8,8
+    LTEXT           "M",-1,277,115,8,8
+    LTEXT           "M",-1,277,139,8,8
+    COMBOBOX        IDC_COMBO15,141,41,34,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO16,141,65,34,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO17,141,89,34,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO18,141,113,34,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO19,141,137,34,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "【1】粒度",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,44,52,10
+    CONTROL         "【2】粒度",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,67,52,10
+    CONTROL         "【3】粒度",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,91,52,10
+    CONTROL         "【4】粒度",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,115,52,10
+    CONTROL         "【5】粒度",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,139,52,10
+    COMBOBOX        IDC_COMBO11,187,65,24,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO12,187,89,24,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO13,187,113,24,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO14,187,137,24,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO10,187,41,24,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_KEY,219,40,52,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_KEY2,219,64,52,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_KEY3,219,88,52,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_KEY4,219,112,52,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_KEY5,219,136,52,14,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "下行低流量",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,82,10,56,10
+    CONTROL         "上行低流量",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,175,10,56,10
+    PUSHBUTTON      "确定",IDC_BUTTON2,134,166,51,14
+END
+
+IDD_CM_LTE_FILE DIALOGEX 0, 0, 620, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SUM_ALARM,56,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "子表数量：",IDC_STATIC,12,13,41,8
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,36,537,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_EXCEL2,243,9,50,14
+    PUSHBUTTON      "查询",IDC_QUARY2,184,9,50,14
+    LTEXT           "厂家：",IDC_STATIC,99,13,25,8
+    COMBOBOX        IDC_COMBO2,128,10,47,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CM_LTE_PARA DIALOGEX 0, 0, 620, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "生成性能表",IDC_QUARY,351,9,50,14,BS_VCENTER
+    EDITTEXT        IDC_SUM_ALARM,56,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "参数数量：",IDC_STATIC,12,13,41,8
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,36,537,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_EXCEL2,233,9,50,14
+    PUSHBUTTON      "查询",IDC_QUARY2,174,9,50,14
+    LTEXT           "厂家：",IDC_STATIC,99,13,25,8
+    COMBOBOX        IDC_COMBO2,126,10,39,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "导入",IDC_EXCEL3,292,9,50,14
+END
+
+IDD_CM_LTE_PARA_Input DIALOGEX 0, 0, 624, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LTE_配置参数_导入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始导入",IDC_BUTTON1,454,11,50,14
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,9,11,50,14
+    EDITTEXT        IDC_EDIT1,110,11,292,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,141,293,72,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,48,560,84,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,314,141,253,71,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATION_SUM,408,11,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "异常导出",IDC_BUTTON6,510,11,50,14
+    CONTROL         "打开文件",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,566,14,48,10
+    LTEXT           "【绿色：新增；  兰色：更新；  红色：异常】",IDC_STATIC,63,30,176,8
+    EDITTEXT        IDC_STATION_SUM3,64,11,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_CM_LTE_QUARY DIALOGEX 0, 0, 951, 243
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "查询日期",IDC_STATIC,15,11,33,8
+    CONTROL         "",IDC_BEG_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,52,8,60,15
+    LTEXT           "天数",IDC_STATIC,120,11,17,8
+    COMBOBOX        IDC_COMBO1,141,8,29,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "导出",IDC_EXCEL,857,8,50,14
+    LTEXT           "Key1",IDC_STATIC,250,11,17,8
+    EDITTEXT        IDC_KEY,272,8,73,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,133,265,99
+    LTEXT           "",IDC_STATIC_SLIT_PANE,13,30,601,96,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,287,133,265,99
+    PUSHBUTTON      "配置查询",IDC_BUTTON1,767,8,50,14
+    COMBOBOX        IDC_COMBO3,629,8,131,288,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO7,350,8,131,293,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "数据量",IDC_STATIC,181,11,25,8
+    EDITTEXT        IDC_LOG_SUM3,210,8,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Key2",IDC_STATIC,528,11,17,8
+    EDITTEXT        IDC_KEY3,549,8,73,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO8,491,8,28,293,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "单日",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,824,11,32,10
+END
+
+IDD_LTE_PM_DATA_CAL DIALOGEX 0, 0, 718, 243
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "数量",IDC_STATIC,11,11,17,8
+    LTEXT           "查询日期",IDC_STATIC,370,11,33,8
+    CONTROL         "",IDC_BEG_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,407,8,62,15
+    LTEXT           "天数",IDC_STATIC,477,11,17,8
+    COMBOBOX        IDC_COMBO1,497,8,32,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LOG_SUM,32,8,28,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "性能导出",IDC_EXCEL,619,27,49,14
+    LTEXT           "Key",IDC_STATIC,99,11,13,8
+    EDITTEXT        IDC_KEY,116,8,73,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,133,265,99
+    LTEXT           "",IDC_STATIC_SLIT_PANE,13,50,601,76,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,287,133,265,99
+    PUSHBUTTON      "小区查询",IDC_BUTTON1,195,8,49,14
+    LTEXT           "性能",IDC_STATIC,11,30,17,8
+    LTEXT           "类型",IDC_STATIC,538,11,17,8
+    COMBOBOX        IDC_COMBO7,557,8,53,87,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LOG_SUM2,102,27,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "数据量",IDC_STATIC,307,11,25,8
+    EDITTEXT        IDC_LOG_SUM3,335,8,28,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "性能计算",IDC_EXCEL2,564,27,49,14
+    PUSHBUTTON      "小区模板",IDC_BUTTON5,251,8,49,14
+    CONTROL         "全选",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,66,11,29,10
+    PUSHBUTTON      "性能选择",IDC_BUTTON2,619,8,49,14
+    EDITTEXT        IDC_KEY3,176,27,381,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "计算公式",IDC_STATIC,139,30,33,8
+    EDITTEXT        IDC_LOG_SUM4,31,27,66,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_PM_LTE_CASE_CAL DIALOGEX 0, 0, 510, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "查询",IDC_QUARY,283,10,50,14
+    LTEXT           "Key：",IDC_STATIC,91,13,21,8
+    EDITTEXT        IDC_KEY,114,10,87,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,205,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,46,10,36,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "数量：",IDC_STATIC,18,13,25,8
+    PUSHBUTTON      "导入",IDC_ELEMENT,399,10,50,14
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,36,440,168,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_EXCEL2,342,10,50,14
+    LTEXT           "【右键删除】",IDC_STATIC,453,12,49,8
+END
+
+IDD_PM_LTE_CASE_CAL_Input DIALOGEX 0, 0, 582, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LTE_性能管理_计算__导入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始导入",IDC_BUTTON1,412,11,50,14
+    PUSHBUTTON      "文件选择",IDC_BUTTON4,9,11,50,14
+    EDITTEXT        IDC_EDIT1,65,11,292,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,141,293,72,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,48,560,84,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,314,141,253,71,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATION_SUM,367,11,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "异常导出",IDC_BUTTON6,468,11,50,14
+    CONTROL         "打开文件",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,524,14,48,10
+    LTEXT           "【绿色：新增；  兰色：更新；  红色：异常】",IDC_STATIC,63,30,163,8
+END
+
+IDD_LTE_PM_DATA_CAL_SELECT DIALOGEX 0, 0, 482, 258
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LTE_自定义计算性能"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,25,466,153
+    PUSHBUTTON      "导出",IDC_EXCEL,422,7,50,14
+    LTEXT           "性能数量：",IDC_STATIC,11,10,41,8
+    EDITTEXT        IDC_EDIT1,54,7,40,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        " 自定义设置 ",IDC_STATIC,6,192,467,59,0,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "模板名称",IDC_STATIC,20,212,33,8
+    EDITTEXT        IDC_EDIT2,58,228,405,14,ES_AUTOHSCROLL
+    LTEXT           "计算公式",IDC_STATIC,20,230,33,8
+    LTEXT           "性能类型",IDC_STATIC,184,212,36,8
+    COMBOBOX        IDC_COMBO3,222,209,88,91,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT3,58,209,94,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "保存",IDC_BUTTON1,340,208,50,14
+    LTEXT           "【注：可以选择已设置的性能，也可以修改，也可以保存，以后使用。】",IDC_STATIC,100,10,257,8
+    PUSHBUTTON      "确定",IDC_BUTTON4,413,208,50,14
+END
+
+IDD_QUA_STATION_MAP DIALOGEX 0, 0, 903, 272
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "查询",IDC_QUARY,321,10,50,14
+    LTEXT           "Key：",IDC_STATIC,85,13,21,8
+    EDITTEXT        IDC_KEY,108,10,87,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,199,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,51,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "站址数量：",IDC_STATIC,9,13,41,8
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,36,564,89,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,7,134,150,130,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "站址导出",IDC_EXCEL2,377,10,50,14
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_HSCROLL | WS_TABSTOP,192,132,167,128,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "拉远站数量",IDC_STATIC,435,13,41,9
+    EDITTEXT        IDC_LOG_SUM,481,9,22,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "显示模式",IDC_STATIC,512,12,35,9
+    CONTROL         "",IDC_EXPLORER,"{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,374,134,195,125
+    PUSHBUTTON      "站址标记",IDC_BUTTON2,669,10,50,14
+    PUSHBUTTON      "地图清除",IDC_BUTTON5,726,10,50,14
+    CONTROL         "内含基站",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,274,12,43,10
+    PUSHBUTTON      "地图获取",IDC_BUTTON8,612,10,50,14
+    LTEXT           "【红色：宏站；兰色：拉远】",IDC_STATIC,781,12,105,8
+    COMBOBOX        IDC_COMBO12,547,10,55,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_QUA_STATION DIALOGEX 0, 0, 504, 272
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "查询",IDC_QUARY,321,10,50,14
+    LTEXT           "Key：",-1,85,13,21,8
+    EDITTEXT        IDC_KEY,108,10,87,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,199,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,51,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "站址数量：",-1,9,13,41,8
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,36,473,89,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,7,134,278,130,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "站址导出",IDC_EXCEL2,377,10,50,14
+    CONTROL         "内含基站",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,274,12,43,10
+    PUSHBUTTON      "基站导出",IDC_BUTTON8,433,10,50,14
+    CONTROL         "",IDC_LIST5,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,301,131,170,130,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+END
+
+IDD_QUA_ELEMENT_TD DIALOGEX 0, 0, 661, 272
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "网元类型：",IDC_STATIC,13,13,41,8
+    COMBOBOX        IDC_COMBO1,56,11,30,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Cell导出",IDC_EXCEL,603,10,50,14
+    PUSHBUTTON      "查询",IDC_QUARY,451,10,50,14
+    LTEXT           "Key：",IDC_STATIC,259,13,21,8
+    EDITTEXT        IDC_KEY,282,10,87,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,7,134,484,130,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_COMBO2,373,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,222,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "小区数量：",IDC_STATIC,180,13,41,8
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,36,646,89,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,501,134,151,130,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "NodeB导出",IDC_EXCEL2,547,10,50,14
+    EDITTEXT        IDC_SUM_ALARM2,143,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "NodeB数量：",IDC_STATIC,96,13,46,8
+    CONTROL         "NodeB",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,509,12,37,10
+END
+
+IDD_QUA_ELEMENT_GSM DIALOGEX 0, 0, 569, 272
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "BTS导出",IDC_EXCEL,451,10,50,14
+    PUSHBUTTON      "查询",IDC_QUARY,361,10,50,14
+    LTEXT           "Key：",IDC_STATIC,169,13,21,8
+    EDITTEXT        IDC_KEY,192,10,87,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,9,134,256,130,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_COMBO2,283,10,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,127,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Cell数量：",IDC_STATIC,89,13,36,8
+    LTEXT           "",IDC_STATIC_SLIT_PANE,7,36,543,89,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,281,135,197,130,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Cell导出",IDC_EXCEL2,508,10,50,14
+    EDITTEXT        IDC_SUM_ALARM2,46,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "BTS数量：",IDC_STATIC,5,13,37,8
+    CONTROL         "BTS",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,421,12,28,10
+END
+
+IDD_ALARM_LL_REAL DIALOGEX 0, 0, 965, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SUM_ALARM,426,10,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "数量：",IDC_STATIC,397,13,25,8
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,210,132,208,99,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_EXCEL2,735,9,50,14
+    PUSHBUTTON      "查询",IDC_QUARY2,610,9,50,14
+    PUSHBUTTON      "参数设置",IDC_QUARY3,342,9,50,14
+    LTEXT           "小区",IDC_STATIC,12,12,17,8
+    LTEXT           "粒度",IDC_STATIC,235,12,17,8
+    EDITTEXT        IDC_LOG_SUM,33,9,25,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Key",IDC_STATIC,67,12,13,8
+    EDITTEXT        IDC_KEY3,83,9,59,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "小区查询",IDC_BUTTON1,144,9,39,14
+    CONTROL         "刷新",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,667,12,32,10
+    LTEXT           "静态",IDC_TIME,256,11,81,12,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "小区模板",IDC_EXCEL4,189,9,39,14
+    CONTROL         "工程",IDC_CHECK14,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,518,12,32,10
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,12,133,186,99
+    LTEXT           "",IDC_STATIC_SLIT_PANE,12,30,601,96,WS_BORDER
+    CONTROL         "",IDC_CHARTVIEW2,"Static",SS_BITMAP,426,135,15,13
+    GROUPBOX        "",IDC_DRAW_AAA,453,132,48,40
+    CONTROL         "单天",IDC_CK_DAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,791,12,29,10
+    CONTROL         "数据点",IDC_YSCALE2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,822,12,40,10
+    LTEXT           "天数：",IDC_STATIC,462,13,25,8
+    COMBOBOX        IDC_COMBO1,484,10,28,338,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "弹窗",IDC_CK_DAY2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,702,12,29,10
+    LTEXT           "参数：",IDC_STATIC,550,13,25,8
+    COMBOBOX        IDC_COMBO3,572,10,33,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ALARM_LL_REAL_TIME DIALOGEX 0, 0, 387, 173
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "低流量小区查询_参数设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "  下行流量设置  ",IDC_STATIC,8,30,182,134,0,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "M",IDC_STATIC,174,70,8,8
+    LTEXT           "M",IDC_STATIC,174,93,8,8
+    LTEXT           "M",IDC_STATIC,174,116,8,8
+    LTEXT           "M",IDC_STATIC,174,139,8,8
+    CONTROL         "【1】当前粒度",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,69,76,10
+    CONTROL         "【2】上周同粒度",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,92,76,10
+    CONTROL         "【3】昨天同粒度",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,115,76,10
+    CONTROL         "【4】前一粒度",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,138,76,10
+    EDITTEXT        IDC_KEY,116,67,52,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_KEY2,116,90,52,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_KEY3,116,113,52,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_KEY4,116,136,52,14,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "下行流量",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,48,48,10
+    PUSHBUTTON      "确认",IDC_BUTTON2,325,9,51,14
+    LTEXT           "<",IDC_STATIC,104,69,8,8
+    LTEXT           ">",IDC_STATIC,104,92,8,8
+    LTEXT           ">",IDC_STATIC,104,115,8,8
+    LTEXT           ">",IDC_STATIC,104,138,8,8
+    LTEXT           "参数：",IDC_STATIC,146,13,25,8
+    COMBOBOX        IDC_COMBO3,172,10,33,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "参数保存",IDC_BUTTON9,211,9,51,14
+    GROUPBOX        "  上行流量设置  ",IDC_STATIC,197,30,182,134,0,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "M",IDC_STATIC,363,70,8,8
+    LTEXT           "M",IDC_STATIC,363,93,8,8
+    LTEXT           "M",IDC_STATIC,363,116,8,8
+    LTEXT           "M",IDC_STATIC,363,139,8,8
+    CONTROL         "【1】当前粒度",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,69,76,10
+    CONTROL         "【2】上周同粒度",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,92,76,10
+    CONTROL         "【3】昨天同粒度",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,115,76,10
+    CONTROL         "【4】前一粒度",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,137,76,10
+    EDITTEXT        IDC_KEY5,305,67,52,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_KEY6,305,89,52,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_KEY7,305,113,52,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_KEY8,305,136,52,14,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "上行流量",IDC_CHECK13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,259,48,48,10
+    LTEXT           "<",IDC_STATIC,293,69,8,8
+    LTEXT           ">",IDC_STATIC,293,92,8,8
+    LTEXT           ">",IDC_STATIC,293,115,8,8
+    LTEXT           ">",IDC_STATIC,293,137,8,8
+    PUSHBUTTON      "参数删除",IDC_BUTTON10,268,9,51,14
+END
+
+IDD_CM_LTE_RELATION DIALOGEX 0, 0, 915, 146
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "厂家",IDC_STATIC,13,11,17,8
+    COMBOBOX        IDC_COMBO1,35,8,41,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "导出",IDC_EXCEL,779,8,50,14
+    LTEXT           "Key1",IDC_STATIC,156,11,17,8
+    EDITTEXT        IDC_KEY,178,8,73,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,10,34,731,91
+    PUSHBUTTON      "配置查询",IDC_BUTTON1,723,8,50,14
+    COMBOBOX        IDC_COMBO3,535,8,131,288,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO7,256,8,131,293,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "数据量",IDC_STATIC,87,11,25,8
+    EDITTEXT        IDC_LOG_SUM3,116,8,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Key2",IDC_STATIC,434,11,17,8
+    EDITTEXT        IDC_KEY3,455,8,73,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO8,397,8,28,293,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "保存文件",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,674,10,48,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "移动多网融合性能优化分析系统"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Station.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "Station.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_LOG_SYSTEM DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO1, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3531, "\000" 
+    0
+END
+
+IDD_LOG_BUG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO1, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3531, "\000" 
+    0
+END
+
+IDD_Alarm_PM DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO1, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3531, "\000" 
+    0
+END
+
+IDD_QUA_STATION_MAP DLGINIT
+BEGIN
+    IDC_EXPLORER, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x1e48, 0x0000, 0x14fb, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CON_STATION, DIALOG
+    BEGIN
+        RIGHTMARGIN, 613
+    END
+
+    IDD_CON_BTS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 460
+    END
+
+    IDD_CON_LTE_Cell, DIALOG
+    BEGIN
+        RIGHTMARGIN, 673
+    END
+
+    IDD_CON_E_NodeB, DIALOG
+    BEGIN
+        RIGHTMARGIN, 689
+    END
+
+    IDD_CON_GSM_Cell_Input, DIALOG
+    BEGIN
+        RIGHTMARGIN, 608
+    END
+
+    IDD_CON_TD_Cell_Input, DIALOG
+    BEGIN
+        RIGHTMARGIN, 605
+    END
+
+    IDD_CON_LTE_Cell_Input, DIALOG
+    BEGIN
+        RIGHTMARGIN, 610
+    END
+
+    IDD_CON_BTS_Input, DIALOG
+    BEGIN
+        RIGHTMARGIN, 575
+    END
+
+    IDD_CON_E_NodeB_Input, DIALOG
+    BEGIN
+        RIGHTMARGIN, 575
+    END
+
+    IDD_CON_Station_Input, DIALOG
+    BEGIN
+        RIGHTMARGIN, 575
+    END
+
+    IDD_CON_Station_Input_R, DIALOG
+    BEGIN
+        RIGHTMARGIN, 575
+    END
+
+    IDD_CON_Station_Input_L, DIALOG
+    BEGIN
+        RIGHTMARGIN, 575
+    END
+
+    IDD_PER_Config, DIALOG
+    BEGIN
+        RIGHTMARGIN, 610
+    END
+
+    IDD_ALL_PM_DRAW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 847
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+
+    IDD_PER_Input, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        RIGHTMARGIN, 702
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 225
+    END
+
+    IDD_CON_XML_TOOLS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 904
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_PM_LTE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 610
+    END
+
+    IDD_CON_PARA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_LTE_PM_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 720
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_LTE_PM_DRAW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 916
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+
+    IDD_PER_ALARM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 460
+    END
+
+    IDD_LTE_PM_Draw_Select, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 561
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_PM_LTE_CASE_CELL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 564
+    END
+
+    IDD_PM_GSM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 610
+    END
+
+    IDD_PM_GSM_CELL_HO, DIALOG
+    BEGIN
+        RIGHTMARGIN, 655
+    END
+
+    IDD_PM_GSM_UPDATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 271
+        TOPMARGIN, 9
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_PM_GSM_UPDATE_PM, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 599
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_PM_GSM_BSC, DIALOG
+    BEGIN
+        RIGHTMARGIN, 710
+    END
+
+    IDD_PM_GSM_BSC_ADD, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 402
+    END
+
+    IDD_PM_LTE_CAL_Input, DIALOG
+    BEGIN
+        RIGHTMARGIN, 572
+    END
+
+    IDD_LTE_PM_DATA_Init, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 720
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_LTE_PM_DRAW_Znit, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 824
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+
+    IDD_LTE_PM_Draw_Znit_Select, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 588
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_PM_LTE_REGION_Input, DIALOG
+    BEGIN
+        RIGHTMARGIN, 572
+    END
+
+    IDD_Alarm_PM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 734
+    END
+
+    IDD_PM_LTE_CASE_CELL_Input, DIALOG
+    BEGIN
+        RIGHTMARGIN, 572
+    END
+
+    IDD_PM_LTE_CASE_PM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 564
+    END
+
+    IDD_PM_LTE_CASE_PM_Input, DIALOG
+    BEGIN
+        RIGHTMARGIN, 572
+    END
+
+    IDD_LTE_PM_DATA_CELL, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 963
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_LTE_PM_DATA_CASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 453
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 281
+    END
+
+    IDD_LTE_PM_DATA_CELL_TIME, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 455
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_LTE_PM_DATA_REAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 852
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_LTE_PM_DATA_REAL_LIMIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 473
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_PM_LTE_ALARM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 567
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 336
+    END
+
+    IDD_ALARM_LL_CELL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 275
+    END
+
+    IDD_ALARM_LL_CELL_TIME, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 297
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_CM_LTE_FILE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 610
+    END
+
+    IDD_CM_LTE_PARA, DIALOG
+    BEGIN
+        RIGHTMARGIN, 610
+    END
+
+    IDD_CM_LTE_PARA_Input, DIALOG
+    BEGIN
+        RIGHTMARGIN, 614
+    END
+
+    IDD_CM_LTE_QUARY, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 939
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_LTE_PM_DATA_CAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 706
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_PM_LTE_CASE_CAL_Input, DIALOG
+    BEGIN
+        RIGHTMARGIN, 572
+    END
+
+    IDD_LTE_PM_DATA_CAL_SELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 473
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_QUA_STATION_MAP, DIALOG
+    BEGIN
+        RIGHTMARGIN, 894
+    END
+
+    IDD_QUA_STATION, DIALOG
+    BEGIN
+        RIGHTMARGIN, 495
+    END
+
+    IDD_ALARM_LL_REAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 955
+        TOPMARGIN, 9
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_ALARM_LL_REAL_TIME, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 379
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_CM_LTE_RELATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 903
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 135
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+    IDS_ALARM               "通信异常："
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "移动多网融合性能优化分析系统"
+    IDR_RTSPAATYPE          "\nRTSPAA\nStation\n\n\nRTSPAA.Document\nStation.Document"
+    IDS_WINDOWS_MANAGER     "窗口(&W)..."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Station"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "系统信息、版本、版权\n关于 移动多网融合性能优化分析系统"
+    ID_APP_EXIT             "退出\n退出系统"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+    AFX_IDS_MDICHILD        "激活此窗口"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STATUS_PANE1        "窗格 1"
+    IDS_STATUS_PANE2        "窗格 2"
+    IDS_TOOLBAR_STANDARD    "标准"
+    IDS_TOOLBAR_CUSTOMIZE   "自定义..."
+    IDS_USER                "用户："
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_MENU           "编辑"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_32774                "系统帮助\n系统使用说明"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_User_Setup           "用户管理\n用户设置、权限设置"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_User_Login           "用户登录\n用户登录"
+    ID_User_PassWord        "密码修改\n用户密码修改"
+    ID_Log_System           "系统工作日志查询\n系统日志"
+    ID_Log_Bug              "系统异常信息查询\n系统异常"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_QUARY_STATION        "全部站址查询\n站址查询"
+    ID_QUARY_REPORT         "依据区域、代维统计退服小区\n退服申告"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_Log_DATABASE         "数据库、数据表占用容量查询\n数据库容量"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DH_REAL              "动力、环境告警申告\n动环告警申告"
+    ID_QUARY_SUCC           "退服率统计\n退服率统计"
+    ID_TD_STOP_HW           "华为 TD-LTE 退服告警申告\nHW TD-LTE 退服告警"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GSM_REAL             "GSM实时告警申告\nGSM实时告警"
+    ID_GSM_STOP             "GSM退服告警申告\nGSM退服告警"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TD_STOP_ZTE          "中兴 TD-LTE 退服告警申告\nZTE TD-LTE 退服告警"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GSM_CELL             "GSM网元查询\nGSM网元查询"
+    ID_TD_CELL              "TD-LTE 网元查询\nTD-LTE 网元查询"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GT_STOP              "高铁退服告警申告\n高铁退服告警"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GT_ELEMENT           "高铁网元查询\n高铁网元查询"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BUTTON33045          "系统信息、版本、版权\n关于 Station"
+    ID_BUTTON33046          "BSC、RNC网元告警申告\n网元告警申告"
+    ID_BUTTON33047          "动力、环境告警申告\n动环告警申告"
+    ID_BUTTON33048          "代维信息查询\n代维查询"
+    ID_QUARY_AGENCY         "代维信息查询\n代维查询"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_Performance_Input    "性能导入\n性能导入"
+    ID_Performance_Quary    "性能查询\n性能查询"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_QUARY_STATION_OUT    "室外共址查询\n室外共址查询"
+    ID_QUARY_STATION_IN     "室内共址查询\n室内共址查询"
+    ID_PER_ALARM            "性能预警\n性能预警"
+    ID_Performance_Output   "共址性能导出\n共址性能导出"
+    ID_QUARY_STATION_Map    "全部站址地图查询\n站址地图查询"
+    ID_Pm_LTE               "性能管理_原始\n性能管理_原始"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_Quary_Tj             "共址统计\n共址统计"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_LTE_PM_DATA          "LTE 性能数据查询\nLTE 性能数据查询"
+    ID_LTE_PM_DRAW          "LTE 性能曲线绘制\nLTE 性能图形查询"
+    ID_ALL_PM_DRAW          "依据共址查询性能曲线\n共址性能查询"
+    ID_Pm_LTE_Cal           "性能管理_计算\n性能管理_计算"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GSM_PM_DRAW          "GSM 性能曲线绘制\nGSM 性能图形查询"
+    ID_GSM_PM_DATA          "GSM 性能数据查询\nGSM 性能数据查询"
+    ID_LTE_PM_DRAW_Init     "LTE 性能曲线绘制\nLTE 性能图形查询_原始"
+    ID_LTE_PM_DATA_Init     "LTE 性能数据查询\nLTE 性能数据查询_原始"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ALARM_PM             "性能预警查询\n性能预警查询"
+    ID_Pm_LTE_Region        "性能管理_区域\n性能管理_区域"
+    ID_QUARY_Element_LTE    "LTE 网元信息查询\nLTE 网元查询"
+    ID_QUARY_Element_GSM    "GSM 网元信息查询\nGSM 网元查询"
+    ID_QUARY_CONFIG_LTE     "LTE 网元信息查询\nLTE 网元查询"
+    ID_QUARY_CONFIG_GSM     "GSM 配置信息查询\nGSM 配置查询"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_QUARY_CONFIG_GSM_CELL "GSM Cell 配置信息查询\nGSM Cell 配置查询"
+    ID_LTE_PM_DATA_REAL     "LTE 性能数据查询\nLTE 性能数据查询_实时"
+    ID_LTE_PM_DATA_CELL     "LTE 性能数据查询\nLTE 性能数据查询_小区"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\RTSPAA.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"          // 标准组件
+#if !defined(_AFXDLL)
+#include "l.CHS\afxprint.rc"                // 打印/打印预览资源
+#include "l.CHS\afxribbon.rc"               // MFC 功能区和控件条资源
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

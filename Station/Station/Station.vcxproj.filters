@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Alarm_LL_Cell.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Alarm_LL_Cell_Time.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Alarm_LL_Real.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Alarm_LL_Real_Time.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Alarm_Message.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Alarm_PM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="All_PM_Draw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartViewer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CM_LTE_File.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CM_LTE_Para.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CM_LTE_Para_Input.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CM_LTE_Quary.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CM_LTE_Relation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_BTS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_BTS_Input.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_E_NodeB.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_E_NodeB_Input.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_GSM_Cell.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_GSM_Cell_Input.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_LTE_Cell.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_LTE_Cell_Input.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_Para.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_Region.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_Station.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_Station_Input.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_Station_Input_L.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_Station_Input_R.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_Station_Region.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_TD_Cell.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_TD_Cell_Input.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CON_Tools_XML.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomControlSite.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImpIDispatch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Log_Bug.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Log_DataBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Log_DataBase_GSM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Log_System.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LTE_PM_Data.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LTE_PM_Data_Cal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LTE_PM_Data_Cal_Select.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LTE_PM_DATA_CASE.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LTE_PM_Data_Cell.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LTE_PM_Data_Cell_Time.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LTE_PM_Data_Init.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LTE_PM_Data_Real.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LTE_PM_Data_Real_Limit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LTE_PM_Draw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LTE_PM_Draw_Select.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LTE_PM_Draw_Znit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LTE_PM_Draw_Znit_Select.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyADOConn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyChartViewer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyExcel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyFile_XML.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyFormula.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyListCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLogWriter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMap_Baidu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMutiTreeCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyRichEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyRSA.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MySplitter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Pm_GSM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Pm_GSM_BSC.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Pm_GSM_BSC_Add.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Pm_GSM_Cell_HO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Pm_GSM_UpDate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Pm_GSM_UpDate_PM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Pm_LTE.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PM_LTE_Alarm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PM_LTE_Cal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PM_LTE_Cal_Input.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PM_LTE_Case_Cal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PM_LTE_Case_Cal_Input.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PM_LTE_Case_Cell.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PM_LTE_Case_Cell_Input.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PM_LTE_Case_PM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PM_LTE_Case_PM_Input.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PM_LTE_Region.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PM_LTE_Region_Input.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QUA_Element_GSM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QUA_Element_TD.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QUA_Station.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QUA_Station_Map.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Station.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StationDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StationView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="User_Login.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="User_Password.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="User_Role.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="User_Setup.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="webbrowser2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WebPage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Alarm_LL_Cell.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Alarm_LL_Cell_Time.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Alarm_LL_Real.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Alarm_LL_Real_Time.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Alarm_Message.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Alarm_PM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="All_PM_Draw.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartViewer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CM_LTE_File.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CM_LTE_Para.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CM_LTE_Para_Input.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CM_LTE_Quary.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CM_LTE_Relation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_BTS.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_BTS_Input.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_E_NodeB.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_E_NodeB_Input.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_GSM_Cell.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_GSM_Cell_Input.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_LTE_Cell.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_LTE_Cell_Input.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_NodeB.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_NodeB_Input.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_Para.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_Region.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_Station.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_Station_Input.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_Station_Input_L.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_Station_Input_R.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_Station_Region.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_TD_Cell.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_TD_Cell_Input.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CON_Tools_XML.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomControlSite.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImpIDispatch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Log_Bug.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Log_DataBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Log_DataBase_GSM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Log_System.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LTE_PM_Data.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LTE_PM_Data_Cal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LTE_PM_Data_Cal_Select.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LTE_PM_DATA_CASE.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LTE_PM_Data_Cell.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LTE_PM_Data_Cell_Time.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LTE_PM_Data_Init.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LTE_PM_Data_Real.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LTE_PM_Data_Real_Limit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LTE_PM_Draw.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LTE_PM_Draw_Select.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LTE_PM_Draw_Znit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LTE_PM_Draw_Znit_Select.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyADOConn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyChartViewer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyDataStruct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyExcel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyFile_XML.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyFormula.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyListCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLogWriter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMap_Baidu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMutiTreeCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyRichEdit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyRSA.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MySplitter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Pm_GSM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Pm_GSM_BSC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Pm_GSM_BSC_Add.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Pm_GSM_Cell_HO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Pm_GSM_UpDate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Pm_GSM_UpDate_PM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Pm_LTE.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PM_LTE_Alarm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PM_LTE_Cal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PM_LTE_Cal_Input.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PM_LTE_Case_Cal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PM_LTE_Case_Cal_Input.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PM_LTE_Case_Cell.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PM_LTE_Case_Cell_Input.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PM_LTE_Case_PM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PM_LTE_Case_PM_Input.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PM_LTE_Region.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PM_LTE_Region_Input.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QUA_Element_GSM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QUA_Element_TD.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QUA_Station.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QUA_Station_Map.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Station.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StationDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StationView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="User_Login.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="User_Password.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="User_Role.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="User_Setup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="webbrowser2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WebPage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\About.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Background.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap4.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Check.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Check_1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ERISSON.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Home.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\HUAWEI.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\icon2.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\In.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Out.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\PM_Chech.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\PM_UnChech.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Power.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Server_GT.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Station.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\StationDoc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\toolbar1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar_32.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\tree.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Tree_Copy.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Tree_Station.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Tree_Station_PG.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="UserImages.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\zte.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\RTSPAA.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="CON_Alarm_Reason.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Station.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

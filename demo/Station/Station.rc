@@ -1,0 +1,991 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\RTSPAA.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""          // 标准组件\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.CHS\\afxprint.rc""                // 打印/打印预览资源\r\n"
+    "#include ""l.CHS\\afxribbon.rc""               // MFC 功能区和控件条资源\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Station.ico"
+IDR_RTSPAATYPE          ICON                    "res\\StationDoc.ico"
+IDI_HUAWEI              ICON                    "res\\HUAWEI.ico"
+IDR_ZTE                 ICON                    "res\\zte.ico"
+IDI_GT                  ICON                    "res\\Server_GT.ico"
+IDI_IN                  ICON                    "res\\In.ico"
+IDI_OUT                 ICON                    "res\\Out.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+IDR_TOOLBAR1            BITMAP                  "res\\toolbar1.bmp"
+IDB_TOOLBAR             BITMAP                  "res\\Toolbar_32.bmp"
+IDB_BACKGROUND          BITMAP                  "res\\Background.bmp"
+IDB_ABOUT               BITMAP                  "res\\About.bmp"
+IDB_TREE                BITMAP                  "res\\tree.bmp"
+IDB_TREE_COPY           BITMAP                  "res\\Tree_Copy.bmp"
+IDB_TREE_CHECK          BITMAP                  "res\\Check.bmp"
+IDB_TREE_STATION        BITMAP                  "res\\Tree_Station.bmp"
+IDB_ERISSON             BITMAP                  "res\\ERISSON.bmp"
+IDB_TREE_CHECK_1        BITMAP                  "res\\Check_1.bmp"
+IDB_HOME                BITMAP                  "res\\Home.bmp"
+IDB_PM_Check            BITMAP                  "res\\PM_Chech.bmp"
+IDB_PM_UnCheck          BITMAP                  "res\\PM_UnChech.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_TOOLBAR1 TOOLBAR  32, 32
+BEGIN
+    BUTTON      ID_CON_LTE_INDICATOR
+    BUTTON      ID_CON_STATION_MAP
+    SEPARATOR
+    BUTTON      ID_CON_ANALYZE_INDICATOR
+    BUTTON      ID_LTE_PM_DATA_REAL
+    SEPARATOR
+    BUTTON      ID_ALARM_PM
+    SEPARATOR
+    BUTTON      ID_ALL_PM_DRAW
+    SEPARATOR
+    BUTTON      ID_QUARY_STATION_OUT
+    BUTTON      ID_QUARY_STATION_IN
+    BUTTON      ID_Quary_Tj
+    SEPARATOR
+    BUTTON      ID_QUARY_CONFIG_LTE_CELL
+    BUTTON      ID_QUARY_CONFIG_GSM_CELL
+    BUTTON      ID_QUARY_CONFIG_LTE
+    BUTTON      ID_QUARY_CONFIG_GSM
+    SEPARATOR
+    BUTTON      ID_Pm_LTE_Region
+    SEPARATOR
+    BUTTON      ID_Log_System
+    BUTTON      ID_Log_Bug
+    BUTTON      ID_Log_DATABASE
+    SEPARATOR
+    BUTTON      ID_User_Login
+    BUTTON      ID_APP_EXIT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "数据预处理"
+    BEGIN
+        MENUITEM "LTE忙时指标",                     ID_CON_LTE_INDICATOR
+        MENUITEM SEPARATOR
+        MENUITEM "离线地图",                        ID_CON_STATION_MAP
+        MENUITEM "分析指标",                        ID_CON_ANALYZE_INDICATOR
+    END
+    POPUP "日志管理"
+    BEGIN
+        MENUITEM "系统日志",                        ID_Log_System
+        MENUITEM "系统异常",                        ID_Log_Bug
+        MENUITEM SEPARATOR
+        MENUITEM "数据库容量",                       ID_Log_DATABASE
+    END
+    POPUP "用户管理"
+    BEGIN
+        MENUITEM "用户管理",                        ID_User_Setup
+        MENUITEM "密码修改",                        ID_User_PassWord
+        MENUITEM "用户登录",                        ID_User_Login
+        MENUITEM SEPARATOR
+        MENUITEM "权限配置",                        ID_User_Role
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "窗口"
+    BEGIN
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "系统帮助",                        ID_32774
+        MENUITEM "关于 demo系统",                   ID_APP_ABOUT
+    END
+END
+
+IDR_RTSPAATYPE MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        POPUP "工具栏和停靠窗口(&T)"
+        BEGIN
+            MENUITEM "<占位符>",                       ID_VIEW_TOOLBAR
+        END
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio.NET 2005(&5)",  ID_VIEW_APPLOOK_VS_2005
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                    ID_WINDOW_NEW
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 Station(&A)...",           ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU 
+BEGIN
+    POPUP "编辑"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_THEME_MENU MENU 
+BEGIN
+    MENUITEM "Office 2007 (蓝色样式)(&B)",      ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (黑色样式)(&L)",      ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (银色样式)(&S)",      ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (水绿色样式)(&A)",     ID_VIEW_APPLOOK_OFF_2007_AQUA
+END
+
+IDR_STATION_DEL MENU 
+BEGIN
+    POPUP "CON_STATION_DEL"
+    BEGIN
+        MENUITEM "删除 (可以选多行)",                  ID_CON_STATION_DEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 270, 173
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 demo系统"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "demo系统",IDC_STATIC,140,8,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016",IDC_STATIC,140,40,114,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,138,94,125,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,138,165,125,1
+    LTEXT           "demo公司",IDC_COMPANY,140,57,90,8
+    LTEXT           "大连理工大学 信息与通信工程学院",IDC_STATIC,144,118,106,8
+    LTEXT           "Tel: 18842621269",IDC_STATIC,144,135,115,8
+    LTEXT           "email:xiangxyyu@126.com",IDC_STATIC,144,149,83,8
+    LTEXT           "版本:1.0",IDC_STATIC,140,24,114,8,SS_NOPREFIX
+    LTEXT           "使用期限：2020-12-31",IDC_STATIC,140,74,72,8
+    LTEXT           "【系统开发】",IDC_STATIC,141,102,42,8
+    CONTROL         314,IDC_STATIC,"Static",SS_BITMAP,8,7,124,172
+END
+
+IDD_USER_LOGIN DIALOGEX 0, 0, 243, 132
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户登录"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,81,26,127,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,81,58,127,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "登录",IDOK,46,95,58,16
+    LTEXT           "登录账号：",IDC_STATIC,33,29,41,8
+    LTEXT           "登录密码：",IDC_STATIC,33,61,41,8
+    PUSHBUTTON      "取消",IDC_CANCEL,138,94,62,16
+END
+
+IDD_LOG_SYSTEM DIALOGEX 0, 0, 634, 360
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "日志数量：",IDC_STATIC,10,11,41,8
+    LTEXT           "查询日期：",IDC_STATIC,112,11,41,8
+    CONTROL         "",IDC_BEG_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,154,8,60,15
+    LTEXT           "天数：",IDC_STATIC,231,11,25,8
+    COMBOBOX        IDC_COMBO1,256,8,29,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LOG_SUM,52,8,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "导出",IDC_EXCEL,524,8,50,14
+    PUSHBUTTON      "查询",IDC_QUARY,462,8,50,14
+    LTEXT           "查询条件：",IDC_STATIC,302,11,41,8
+    EDITTEXT        IDC_KEY,343,8,102,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,30,620,323
+END
+
+IDD_LOG_BUG DIALOGEX 0, 0, 634, 360
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "异常数量：",IDC_STATIC,10,11,41,8
+    LTEXT           "查询日期：",IDC_STATIC,112,11,41,8
+    CONTROL         "",IDC_BEG_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,154,8,60,15
+    LTEXT           "天数：",IDC_STATIC,231,11,25,8
+    COMBOBOX        IDC_COMBO1,256,8,29,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LOG_SUM,52,8,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "导出",IDC_EXCEL,524,8,50,14
+    PUSHBUTTON      "查询",IDC_QUARY,462,8,50,14
+    LTEXT           "查询条件：",IDC_STATIC,302,11,41,8
+    EDITTEXT        IDC_KEY,343,8,102,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,30,620,323
+END
+
+IDD_LOG_DATABASE DIALOGEX 0, 0, 420, 241
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,25,395,205
+    PUSHBUTTON      "导出",IDC_EXCEL,184,7,50,14
+    LTEXT           "数据库容量：",IDC_STATIC,11,10,54,10
+    EDITTEXT        IDC_STATION_SUM,58,7,43,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "容量单位：KB",IDC_STATIC,122,10,54,10
+END
+
+IDD_USER_PASSWORD DIALOGEX 0, 0, 243, 145
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "密码修改"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,79,17,129,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,79,46,129,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,79,75,129,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,56,112,50,14
+    PUSHBUTTON      "取消",IDCANCEL,134,112,50,14
+    LTEXT           "原始密码：",IDC_STATIC,36,20,41,8
+    LTEXT           "登录密码：",IDC_STATIC,36,49,41,8
+    LTEXT           "重复密码：",IDC_STATIC,36,78,41,8
+    LTEXT           "登录密码不能超过12个字母/数字",IDC_STATIC,80,92,116,8
+END
+
+IDD_USER_ROLE DIALOGEX 0, 0, 533, 266
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "权限配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,30,204,229,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "导出",IDC_MSC_KPI_Excel,99,10,50,14
+    LTEXT           "角色数量：",IDC_STATIC,12,12,41,10
+    EDITTEXT        IDC_STATION_SUM,51,10,40,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "  增加角色  ",IDC_STATIC,347,6,179,81,0,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "增加",IDC_ADD_MSC_KPI2,407,67,50,14
+    EDITTEXT        IDC_EDIT65,391,27,122,14,ES_AUTOHSCROLL
+    LTEXT           "角色名称",IDC_STATIC,357,30,33,8
+    PUSHBUTTON      "删除",IDC_BUTTON23,407,141,50,14
+    EDITTEXT        IDC_EDIT71,391,119,122,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "角色名称",IDC_STATIC,357,121,33,8
+    LTEXT           "角色备注",IDC_STATIC,357,49,33,8
+    EDITTEXT        IDC_EDIT67,391,47,122,14,ES_AUTOHSCROLL
+    GROUPBOX        "  删除角色  ",IDC_STATIC,347,96,179,69,0,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT72,392,194,122,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "角色名称",IDC_STATIC,358,197,33,8
+    GROUPBOX        " 修改角色  ",IDC_STATIC,347,172,179,87,0,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "修改",IDC_BUTTON25,407,237,50,14
+    LTEXT           "角色备注",IDC_STATIC,358,218,33,8
+    EDITTEXT        IDC_EDIT69,392,216,122,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,218,31,120,228,WS_EX_CLIENTEDGE
+    CONTROL         "角色",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,162,12,32,10
+    PUSHBUTTON      "全选",IDC_ALL,217,10,35,14
+    PUSHBUTTON      "全不选",IDC_NULL,260,10,35,14
+    PUSHBUTTON      "保存",IDC_SAVE,303,10,35,14
+END
+
+IDD_USER_SETUP DIALOGEX 0, 0, 549, 326
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "增加",IDC_ADD,74,231,50,14
+    PUSHBUTTON      "删除",IDC_DELETE,341,231,50,14
+    PUSHBUTTON      "导出",IDC_EXCEL,430,231,50,14
+    LTEXT           "用户数量：",IDC_STATIC,11,12,63,8
+    EDITTEXT        IDC_EDIT1,49,10,40,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "  用户增加/修改  ",IDC_STATIC,7,258,535,61
+    LTEXT           "用户姓名",IDC_STATIC,24,276,43,8
+    EDITTEXT        IDC_EDIT2,60,273,62,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确认",IDC_ADD2,409,273,50,14
+    PUSHBUTTON      "修改",IDC_MODIFY,163,231,50,14
+    LTEXT           "角色",IDC_STATIC,139,276,19,8
+    LTEXT           "账号",IDC_STATIC,248,276,20,8
+    EDITTEXT        IDC_EDIT6,266,273,62,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "取消",IDC_BUTTON1,473,273,50,14
+    COMBOBOX        IDC_POOL,160,275,70,49,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "用户有效",IDC_SEND_FLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,347,275,48,10
+    LTEXT           "备注",IDC_STATIC,39,297,20,8
+    EDITTEXT        IDC_EDIT7,59,294,241,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "密码清除",IDC_PASSWORD,252,231,50,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,29,535,193
+END
+
+IDD_USER_ONLINE DIALOGEX 0, 0, 634, 360
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "在线用户数量：",-1,10,11,57,8
+    EDITTEXT        IDC_LOG_SUM,70,8,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "导出",IDC_EXCEL,186,8,50,14
+    PUSHBUTTON      "刷新",IDC_QUARY,124,8,50,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,30,620,323
+END
+
+IDD_CON_LTE_INDICATOR DIALOGEX 0, 0, 738, 279
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "统计导出",IDC_EXCEL,340,11,50,14
+    PUSHBUTTON      "查询",IDC_QUARY,283,11,50,14
+    LTEXT           "Key：",IDC_STATIC,91,15,21,8
+    EDITTEXT        IDC_KEY,113,11,87,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,205,11,68,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,53,11,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "站址数量：",IDC_STATIC,11,15,41,8
+    LTEXT           "",IDC_STATIC_SLIT_PANE,9,38,471,89,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,9,136,218,130,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_HSCROLL | WS_TABSTOP,237,138,238,128,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    CONTROL         "在网",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,457,14,32,10
+    CONTROL         "有效站址",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,494,14,48,10
+    PUSHBUTTON      "明细导出",IDC_BUTTON2,397,11,50,14
+    ICON            IDI_OUT,IDC_STATIC,609,8,21,20
+    LTEXT           "【含有有效基站】",IDC_STATIC,539,15,65,8
+END
+
+IDD_CON_LTE_BUSY_INDICATOR DIALOGEX 0, 0, 724, 279
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "导入数据库",IDC_BUTTON_INPUT_DATABASE,274,11,50,14
+    PUSHBUTTON      "文件选择",IDC_BUTTON_FILE_SELECT,12,11,50,14
+    EDITTEXT        IDC_KEY,72,11,135,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,9,28,705,238
+    ICON            IDI_IN,IDC_STATIC,401,8,21,20
+    PUSHBUTTON      "忙时指标导出",IDC_BUTTON_OUTPUT_DATABASE,332,11,60,14
+    PUSHBUTTON      "读取CSV文件",IDC_BUTTON_READ_CSV,218,11,50,14
+END
+
+IDD_CON_STATION_MAP DIALOGEX 0, 0, 738, 279
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "标记清除",IDC_EXCEL,420,6,50,14
+    PUSHBUTTON      "查询",IDC_QUARY,249,6,50,14
+    LTEXT           "Key：",IDC_STATIC,91,11,21,8
+    EDITTEXT        IDC_KEY,113,7,59,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,179,7,63,228,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,53,7,28,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "站址数量：",IDC_STATIC,11,11,41,8
+    LTEXT           "",IDC_STATIC_SLIT_PANE,9,38,471,89,WS_BORDER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,263,136,218,130,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    CONTROL         "在网",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,538,10,32,10
+    CONTROL         "有效站址",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,570,10,48,10
+    PUSHBUTTON      "地图标记",IDC_BUTTON2,363,6,50,14
+    LTEXT           "【含有有效基站】",IDC_STATIC,616,11,65,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_EXPLORER,"{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,9,137,237,129
+    PUSHBUTTON      "地图获取",IDC_QUARY3,306,6,50,14
+    PUSHBUTTON      "站址导出",IDC_EXCEL2,477,6,50,14
+END
+
+IDD_ALARM_MESSAGE DIALOGEX 0, 0, 192, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "性能预警提示"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "新增 n 个预警",IDC_BUTTON1,65,47,70,14,NOT WS_TABSTOP
+END
+
+IDD_CON_ANALYZE_INDICATOR DIALOGEX 0, 0, 738, 279
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "标记清除",IDC_EXCEL,420,6,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "查询",IDC_QUARY,249,6,50,14,NOT WS_VISIBLE
+    LTEXT           "Key：",IDC_STATIC,91,11,21,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_KEY,113,7,59,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO2,179,7,63,228,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUM_ALARM,53,7,28,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "站址数量：",IDC_STATIC,11,11,41,8,NOT WS_VISIBLE
+    LTEXT           "",IDC_STATIC_SLIT_PANE,9,38,471,89,NOT WS_VISIBLE | WS_BORDER | NOT WS_GROUP
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | NOT WS_VISIBLE | WS_BORDER | WS_TABSTOP,263,136,218,130,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    CONTROL         "在网",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,538,10,32,10
+    CONTROL         "有效站址",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,570,10,48,10
+    PUSHBUTTON      "地图标记",IDC_BUTTON2,363,6,50,14,NOT WS_VISIBLE
+    LTEXT           "【含有有效基站】",IDC_STATIC,616,11,65,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_EXPLORER,"{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,9,137,237,129
+    PUSHBUTTON      "地图获取",IDC_QUARY3,306,6,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "站址导出",IDC_EXCEL2,477,6,50,14,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "demo系统"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Station.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "Station.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_LOG_SYSTEM DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO1, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3531, "\000" 
+    0
+END
+
+IDD_LOG_BUG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO1, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3531, "\000" 
+    0
+END
+
+IDD_CON_STATION_MAP DLGINIT
+BEGIN
+    IDC_EXPLORER, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x24cb, 0x0000, 0x15b4, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_CON_ANALYZE_INDICATOR DLGINIT
+BEGIN
+    IDC_EXPLORER, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x24cb, 0x0000, 0x15b4, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CON_LTE_INDICATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        RIGHTMARGIN, 728
+        TOPMARGIN, 11
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_CON_LTE_BUSY_INDICATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        RIGHTMARGIN, 714
+        TOPMARGIN, 11
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_CON_STATION_MAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        RIGHTMARGIN, 728
+        TOPMARGIN, 11
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_CON_ANALYZE_INDICATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        RIGHTMARGIN, 728
+        TOPMARGIN, 11
+        BOTTOMMARGIN, 266
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+    IDS_ALARM               "通信异常："
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "demo系统"
+    IDR_RTSPAATYPE          "\nRTSPAA\nStation\n\n\nRTSPAA.Document\nStation.Document"
+    IDS_WINDOWS_MANAGER     "窗口(&W)..."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Station"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "系统信息、版本、版权\n关于 demo系统"
+    ID_APP_EXIT             "退出\n退出系统"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+    AFX_IDS_MDICHILD        "激活此窗口"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STATUS_PANE1        "窗格 1"
+    IDS_STATUS_PANE2        "窗格 2"
+    IDS_TOOLBAR_STANDARD    "标准"
+    IDS_TOOLBAR_CUSTOMIZE   "自定义..."
+    IDS_USER                "用户："
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_MENU           "编辑"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_32774                "系统帮助\n系统使用说明"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_User_Setup           "用户管理\n用户设置、权限设置"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_User_Login           "用户登录\n用户登录"
+    ID_User_PassWord        "密码修改\n用户密码修改"
+    ID_Log_System           "系统工作日志查询\n系统日志"
+    ID_Log_Bug              "系统异常信息查询\n系统异常"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_QUARY_STATION        "全部共址查询\n共址查询"
+    ID_QUARY_REPORT         "依据区域、代维统计退服小区\n退服申告"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_Log_DATABASE         "数据库、数据表占用容量查询\n数据库容量"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DH_REAL              "动力、环境告警申告\n动环告警申告"
+    ID_QUARY_SUCC           "退服率统计\n退服率统计"
+    ID_TD_STOP_HW           "华为 TD-LTE 退服告警申告\nHW TD-LTE 退服告警"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GSM_REAL             "GSM实时告警申告\nGSM实时告警"
+    ID_GSM_STOP             "GSM退服告警申告\nGSM退服告警"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TD_STOP_ZTE          "中兴 TD-LTE 退服告警申告\nZTE TD-LTE 退服告警"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GSM_CELL             "GSM网元查询\nGSM网元查询"
+    ID_TD_CELL              "TD-LTE 网元查询\nTD-LTE 网元查询"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GT_STOP              "高铁退服告警申告\n高铁退服告警"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GT_ELEMENT           "高铁网元查询\n高铁网元查询"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BUTTON33045          "系统信息、版本、版权\n关于 Station"
+    ID_BUTTON33046          "BSC、RNC网元告警申告\n网元告警申告"
+    ID_BUTTON33047          "动力、环境告警申告\n动环告警申告"
+    ID_BUTTON33048          "代维信息查询\n代维查询"
+    ID_QUARY_AGENCY         "代维信息查询\n代维查询"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_Performance_Input    "性能导入\n性能导入"
+    ID_Performance_Quary    "性能查询\n性能查询"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_QUARY_STATION_OUT    "室外共址查询\n室外共址查询"
+    ID_QUARY_STATION_IN     "室内共址查询\n室内共址查询"
+    ID_PER_ALARM            "性能预警\n性能预警"
+    ID_Performance_Output   "共址性能导出\n共址性能导出"
+    ID_Pm_LTE               "性能管理_原始\n性能管理_原始"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_Quary_Tj             "共址统计\n共址统计"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_LTE_PM_DATA          "LTE 性能数据查询\nLTE 性能数据查询"
+    ID_LTE_PM_DRAW          "LTE 性能曲线绘制\nLTE 性能图形查询"
+    ID_ALL_PM_DRAW          "依据共址查询性能曲线\n共址性能查询"
+    ID_Pm_LTE_Cal           "性能管理_计算\n性能管理_计算"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GSM_PM_DRAW          "GSM 性能曲线绘制\nGSM 性能图形查询"
+    ID_GSM_PM_DATA          "GSM 性能数据查询\nGSM 性能数据查询"
+    ID_LTE_PM_DRAW_Init     "LTE 性能曲线绘制\nLTE 性能图形查询_原始"
+    ID_LTE_PM_DATA_Init     "LTE 性能数据查询\nLTE 性能数据查询_原始"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ALARM_PM             "性能预警查询\n性能预警查询"
+    ID_Pm_LTE_Region        "性能管理_区域\n性能管理_区域"
+    ID_QUARY_Element_LTE    "LTE 网元信息查询\nLTE 网元查询"
+    ID_QUARY_Element_GSM    "GSM 网元信息查询\nGSM 网元查询"
+    ID_QUARY_CONFIG_LTE     "LTE 网元信息查询\nLTE 网元查询"
+    ID_QUARY_CONFIG_GSM     "GSM 配置信息查询\nGSM 配置查询"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_QUARY_CONFIG_GSM_CELL "GSM Cell 配置信息查询\nGSM Cell 配置查询"
+    ID_QUARY_CONFIG_LTE_CELL "LTE Cell 配置信息查询\nLTE Cell 配置查询"
+    ID_LTE_PM_DATA_REAL     "LTE 性能数据查询\nLTE 性能数据查询_实时"
+    ID_LTE_PM_DATA_CELL     "LTE 性能数据查询\nLTE 性能数据查询_小区"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CON_STATION_MAP      "基站地图查询\nLTE 基站地图查询"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\RTSPAA.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"          // 标准组件
+#if !defined(_AFXDLL)
+#include "l.CHS\afxprint.rc"                // 打印/打印预览资源
+#include "l.CHS\afxribbon.rc"               // MFC 功能区和控件条资源
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

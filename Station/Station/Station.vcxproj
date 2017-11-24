@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CF30609B-27E9-46DD-ADA1-8D7553C906EA}</ProjectGuid>
+    <RootNamespace>RTSPAA</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\lib\chartdir51.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\lib\chartdir51.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>C:\Program Files\Codejock Software\MFC\Xtreme ToolkitPro v16.1.0 (30 Day Trial)\Source;C:\Program Files\Codejock Software\MFC\Xtreme ToolkitPro v16.1.0 (30 Day Trial)\Samples\AboutDlg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\lib\chartdir51.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\Codejock Software\MFC\Xtreme ToolkitPro v16.1.0 (30 Day Trial)\Lib;C:\Program Files\Codejock Software\MFC\Xtreme ToolkitPro v16.1.0 (30 Day Trial)\Source\GraphicLibrary\GdiPlus;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>C:\Program Files\Codejock Software\MFC\Xtreme ToolkitPro v16.1.0 (30 Day Trial)\Source;C:\Program Files\Codejock Software\MFC\Xtreme ToolkitPro v16.1.0 (30 Day Trial)\Samples\AboutDlg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\lib\chartdir51.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\Codejock Software\MFC\Xtreme ToolkitPro v16.1.0 (30 Day Trial)\Lib;C:\Program Files\Codejock Software\MFC\Xtreme ToolkitPro v16.1.0 (30 Day Trial)\Source\GraphicLibrary\GdiPlus;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Alarm_LL_Cell.cpp" />
+    <ClCompile Include="Alarm_LL_Cell_Time.cpp" />
+    <ClCompile Include="Alarm_LL_Real.cpp" />
+    <ClCompile Include="Alarm_LL_Real_Time.cpp" />
+    <ClCompile Include="Alarm_Message.cpp" />
+    <ClCompile Include="Alarm_PM.cpp" />
+    <ClCompile Include="All_PM_Draw.cpp" />
+    <ClCompile Include="ChartViewer.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="CM_LTE_File.cpp" />
+    <ClCompile Include="CM_LTE_Para.cpp" />
+    <ClCompile Include="CM_LTE_Para_Input.cpp" />
+    <ClCompile Include="CM_LTE_Quary.cpp" />
+    <ClCompile Include="CM_LTE_Relation.cpp" />
+    <ClCompile Include="CON_BTS.cpp" />
+    <ClCompile Include="CON_BTS_Input.cpp" />
+    <ClCompile Include="CON_E_NodeB.cpp" />
+    <ClCompile Include="CON_E_NodeB_Input.cpp" />
+    <ClCompile Include="CON_GSM_Cell.cpp" />
+    <ClCompile Include="CON_GSM_Cell_Input.cpp" />
+    <ClCompile Include="CON_LTE_Cell.cpp" />
+    <ClCompile Include="CON_LTE_Cell_Input.cpp" />
+    <ClCompile Include="CON_Para.cpp" />
+    <ClCompile Include="CON_Region.cpp" />
+    <ClCompile Include="CON_Station.cpp" />
+    <ClCompile Include="CON_Station_Input.cpp" />
+    <ClCompile Include="CON_Station_Input_L.cpp" />
+    <ClCompile Include="CON_Station_Input_R.cpp" />
+    <ClCompile Include="CON_Station_Region.cpp" />
+    <ClCompile Include="CON_TD_Cell.cpp" />
+    <ClCompile Include="CON_TD_Cell_Input.cpp" />
+    <ClCompile Include="CON_Tools_XML.cpp" />
+    <ClCompile Include="CustomControlSite.cpp" />
+    <ClCompile Include="ImpIDispatch.cpp" />
+    <ClCompile Include="Log_Bug.cpp" />
+    <ClCompile Include="Log_DataBase.cpp" />
+    <ClCompile Include="Log_DataBase_GSM.cpp" />
+    <ClCompile Include="Log_System.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="LTE_PM_Data.cpp" />
+    <ClCompile Include="LTE_PM_Data_Cal.cpp" />
+    <ClCompile Include="LTE_PM_Data_Cal_Select.cpp" />
+    <ClCompile Include="LTE_PM_DATA_CASE.cpp" />
+    <ClCompile Include="LTE_PM_Data_Cell.cpp" />
+    <ClCompile Include="LTE_PM_Data_Cell_Time.cpp" />
+    <ClCompile Include="LTE_PM_Data_Init.cpp" />
+    <ClCompile Include="LTE_PM_Data_Real.cpp" />
+    <ClCompile Include="LTE_PM_Data_Real_Limit.cpp" />
+    <ClCompile Include="LTE_PM_Draw.cpp" />
+    <ClCompile Include="LTE_PM_Draw_Select.cpp" />
+    <ClCompile Include="LTE_PM_Draw_Znit.cpp" />
+    <ClCompile Include="LTE_PM_Draw_Znit_Select.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MyADOConn.cpp" />
+    <ClCompile Include="MyChartViewer.cpp" />
+    <ClCompile Include="MyExcel.cpp" />
+    <ClCompile Include="MyFile_XML.cpp" />
+    <ClCompile Include="MyFormula.cpp" />
+    <ClCompile Include="MyListCtrl.cpp" />
+    <ClCompile Include="MyLogWriter.cpp" />
+    <ClCompile Include="MyMap_Baidu.cpp" />
+    <ClCompile Include="MyMutiTreeCtrl.cpp" />
+    <ClCompile Include="MyRichEdit.cpp" />
+    <ClCompile Include="MyRSA.cpp" />
+    <ClCompile Include="MySplitter.cpp" />
+    <ClCompile Include="Pm_GSM.cpp" />
+    <ClCompile Include="Pm_GSM_BSC.cpp" />
+    <ClCompile Include="Pm_GSM_BSC_Add.cpp" />
+    <ClCompile Include="Pm_GSM_Cell_HO.cpp" />
+    <ClCompile Include="Pm_GSM_UpDate.cpp" />
+    <ClCompile Include="Pm_GSM_UpDate_PM.cpp" />
+    <ClCompile Include="Pm_LTE.cpp" />
+    <ClCompile Include="PM_LTE_Alarm.cpp" />
+    <ClCompile Include="PM_LTE_Cal.cpp" />
+    <ClCompile Include="PM_LTE_Cal_Input.cpp" />
+    <ClCompile Include="PM_LTE_Case_Cal.cpp" />
+    <ClCompile Include="PM_LTE_Case_Cal_Input.cpp" />
+    <ClCompile Include="PM_LTE_Case_Cell.cpp" />
+    <ClCompile Include="PM_LTE_Case_Cell_Input.cpp" />
+    <ClCompile Include="PM_LTE_Case_PM.cpp" />
+    <ClCompile Include="PM_LTE_Case_PM_Input.cpp" />
+    <ClCompile Include="PM_LTE_Region.cpp" />
+    <ClCompile Include="PM_LTE_Region_Input.cpp" />
+    <ClCompile Include="QUA_Element_GSM.cpp" />
+    <ClCompile Include="QUA_Element_TD.cpp" />
+    <ClCompile Include="QUA_Station.cpp" />
+    <ClCompile Include="QUA_Station_Map.cpp" />
+    <ClCompile Include="Station.cpp" />
+    <ClCompile Include="StationDoc.cpp" />
+    <ClCompile Include="StationView.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="User_Login.cpp" />
+    <ClCompile Include="User_Password.cpp" />
+    <ClCompile Include="User_Role.cpp" />
+    <ClCompile Include="User_Setup.cpp" />
+    <ClCompile Include="webbrowser2.cpp" />
+    <ClCompile Include="WebPage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Alarm_LL_Cell.h" />
+    <ClInclude Include="Alarm_LL_Cell_Time.h" />
+    <ClInclude Include="Alarm_LL_Real.h" />
+    <ClInclude Include="Alarm_LL_Real_Time.h" />
+    <ClInclude Include="Alarm_Message.h" />
+    <ClInclude Include="Alarm_PM.h" />
+    <ClInclude Include="All_PM_Draw.h" />
+    <ClInclude Include="ChartViewer.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="CM_LTE_File.h" />
+    <ClInclude Include="CM_LTE_Para.h" />
+    <ClInclude Include="CM_LTE_Para_Input.h" />
+    <ClInclude Include="CM_LTE_Quary.h" />
+    <ClInclude Include="CM_LTE_Relation.h" />
+    <ClInclude Include="CON_BTS.h" />
+    <ClInclude Include="CON_BTS_Input.h" />
+    <ClInclude Include="CON_E_NodeB.h" />
+    <ClInclude Include="CON_E_NodeB_Input.h" />
+    <ClInclude Include="CON_GSM_Cell.h" />
+    <ClInclude Include="CON_GSM_Cell_Input.h" />
+    <ClInclude Include="CON_LTE_Cell.h" />
+    <ClInclude Include="CON_LTE_Cell_Input.h" />
+    <ClInclude Include="CON_NodeB.h" />
+    <ClInclude Include="CON_NodeB_Input.h" />
+    <ClInclude Include="CON_Para.h" />
+    <ClInclude Include="CON_Region.h" />
+    <ClInclude Include="CON_Station.h" />
+    <ClInclude Include="CON_Station_Input.h" />
+    <ClInclude Include="CON_Station_Input_L.h" />
+    <ClInclude Include="CON_Station_Input_R.h" />
+    <ClInclude Include="CON_Station_Region.h" />
+    <ClInclude Include="CON_TD_Cell.h" />
+    <ClInclude Include="CON_TD_Cell_Input.h" />
+    <ClInclude Include="CON_Tools_XML.h" />
+    <ClInclude Include="CustomControlSite.h" />
+    <ClInclude Include="ImpIDispatch.h" />
+    <ClInclude Include="Log_Bug.h" />
+    <ClInclude Include="Log_DataBase.h" />
+    <ClInclude Include="Log_DataBase_GSM.h" />
+    <ClInclude Include="Log_System.h" />
+    <ClInclude Include="LTE_PM_Data.h" />
+    <ClInclude Include="LTE_PM_Data_Cal.h" />
+    <ClInclude Include="LTE_PM_Data_Cal_Select.h" />
+    <ClInclude Include="LTE_PM_DATA_CASE.h" />
+    <ClInclude Include="LTE_PM_Data_Cell.h" />
+    <ClInclude Include="LTE_PM_Data_Cell_Time.h" />
+    <ClInclude Include="LTE_PM_Data_Init.h" />
+    <ClInclude Include="LTE_PM_Data_Real.h" />
+    <ClInclude Include="LTE_PM_Data_Real_Limit.h" />
+    <ClInclude Include="LTE_PM_Draw.h" />
+    <ClInclude Include="LTE_PM_Draw_Select.h" />
+    <ClInclude Include="LTE_PM_Draw_Znit.h" />
+    <ClInclude Include="LTE_PM_Draw_Znit_Select.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MyADOConn.h" />
+    <ClInclude Include="MyChartViewer.h" />
+    <ClInclude Include="MyDataStruct.h" />
+    <ClInclude Include="MyExcel.h" />
+    <ClInclude Include="MyFile_XML.h" />
+    <ClInclude Include="MyFormula.h" />
+    <ClInclude Include="MyListCtrl.h" />
+    <ClInclude Include="MyLogWriter.h" />
+    <ClInclude Include="MyMap_Baidu.h" />
+    <ClInclude Include="MyMutiTreeCtrl.h" />
+    <ClInclude Include="MyRichEdit.h" />
+    <ClInclude Include="MyRSA.h" />
+    <ClInclude Include="MySplitter.h" />
+    <ClInclude Include="Pm_GSM.h" />
+    <ClInclude Include="Pm_GSM_BSC.h" />
+    <ClInclude Include="Pm_GSM_BSC_Add.h" />
+    <ClInclude Include="Pm_GSM_Cell_HO.h" />
+    <ClInclude Include="Pm_GSM_UpDate.h" />
+    <ClInclude Include="Pm_GSM_UpDate_PM.h" />
+    <ClInclude Include="Pm_LTE.h" />
+    <ClInclude Include="PM_LTE_Alarm.h" />
+    <ClInclude Include="PM_LTE_Cal.h" />
+    <ClInclude Include="PM_LTE_Cal_Input.h" />
+    <ClInclude Include="PM_LTE_Case_Cal.h" />
+    <ClInclude Include="PM_LTE_Case_Cal_Input.h" />
+    <ClInclude Include="PM_LTE_Case_Cell.h" />
+    <ClInclude Include="PM_LTE_Case_Cell_Input.h" />
+    <ClInclude Include="PM_LTE_Case_PM.h" />
+    <ClInclude Include="PM_LTE_Case_PM_Input.h" />
+    <ClInclude Include="PM_LTE_Region.h" />
+    <ClInclude Include="PM_LTE_Region_Input.h" />
+    <ClInclude Include="QUA_Element_GSM.h" />
+    <ClInclude Include="QUA_Element_TD.h" />
+    <ClInclude Include="QUA_Station.h" />
+    <ClInclude Include="QUA_Station_Map.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Station.h" />
+    <ClInclude Include="StationDoc.h" />
+    <ClInclude Include="StationView.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="User_Login.h" />
+    <ClInclude Include="User_Password.h" />
+    <ClInclude Include="User_Role.h" />
+    <ClInclude Include="User_Setup.h" />
+    <ClInclude Include="webbrowser2.h" />
+    <ClInclude Include="WebPage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\About.bmp" />
+    <Image Include="res\Background.bmp" />
+    <Image Include="res\bitmap3.bmp" />
+    <Image Include="res\bitmap4.bmp" />
+    <Image Include="res\Check.bmp" />
+    <Image Include="res\Check_1.bmp" />
+    <Image Include="res\ERISSON.bmp" />
+    <Image Include="res\Home.bmp" />
+    <Image Include="res\HUAWEI.ico" />
+    <Image Include="res\icon2.ico" />
+    <Image Include="res\In.ico" />
+    <Image Include="res\Out.ico" />
+    <Image Include="res\PM_Chech.bmp" />
+    <Image Include="res\PM_UnChech.bmp" />
+    <Image Include="res\Power.bmp" />
+    <Image Include="res\Server_GT.ico" />
+    <Image Include="res\Station.ico" />
+    <Image Include="res\StationDoc.ico" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\toolbar1.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\Toolbar_32.bmp" />
+    <Image Include="res\tree.bmp" />
+    <Image Include="res\Tree_Copy.bmp" />
+    <Image Include="res\Tree_Station.bmp" />
+    <Image Include="res\Tree_Station_PG.bmp" />
+    <Image Include="UserImages.bmp" />
+    <Image Include="res\zte.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\RTSPAA.rc2" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="CON_Alarm_Reason.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Station.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Station.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
